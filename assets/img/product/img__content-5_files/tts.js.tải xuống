@@ -1,0 +1,148 @@
+
+var text2Speech;
+(function ($, undefined) {
+
+  const new_speech_html = '<option id="banmaiace" value="banmaiace" selected="" data-class="AceSound">Northern Accent: Ban Mai Ace (female)</option><option id="minhquangace" value="minhquangace" data-class="AceSound">Southern Accent: Minh Quang Ace (male)</option><option id="thuminhace" value="thuminhace" data-class="AceSound">Northen Accent: Thu Minh Ace (female)</option><option id="linhsanace" value="linhsanace" data-class="AceSound">Southern Accent: Linh San Ace (female)</option><option id="lannhiace" value="lannhiace" data-class="AceSound">Southern Accent: Lan Nhi Ace (female)</option><option id="banmai" value="banmai" data-class="MostPopular">Northern Accent: Ban Mai (female)</option><option id="leminh" value="leminh">Northern Accent: Lê Minh(male)</option><option id="thuminh" value="thuminh">Northen Accent: Thu Minh (female)</option><option id="myan" value="myan">Central Accent: Mỹ An (female)</option><option id="ngoclam" value="ngoclam">Central Accent: Ngọc Lam (female)</option><option id="giahuy" value="giahuy">Central Accent: Gia Huy (male)</option><option id="lannhi" value="lannhi" data-class="MostPopular">Southern Accent: Lan Nhi (female)</option><option id="linhsan" value="linhsan">Southern Accent: Linh San (female)</option><option id="minhquang" value="minhquang">Southern Accent: Minh Quang (male)</option>';
+  const old_speech_html = '<option id="thudung" value="female" selected="">Northern Accent: Thu Dung(female)</option><option id="caochung" value="male">Northern Accent: Cao Chung (male)</option><option id="hatieumai" value="hatieumai">Northern Accent: Hà Tiểu Mai (female)</option>';
+
+  var selected_voice = 'new';
+
+  if ($("#voice_select") && $("#voice_select")[0]) {
+    $("#voice_select")[0].innerHTML = new_speech_html;
+  }
+  $('.form-group.fptai-tts__selection-voice').remove();
+
+  /* $('.form-group.fptai-tts__selection-voice input[type="radio"]').click(function () {
+    if ($(this).is(':checked')) {
+      if ($(this).val() !== selected_voice) {
+        if ($(this).val() === 'new') {
+          $("#voice_select")[0].innerHTML = new_speech_html;
+        } else {
+          $("#voice_select")[0].innerHTML = old_speech_html;
+        };
+
+        selected_voice = $(this).val();
+      }
+    }
+  }); */
+
+  $("#tts-speak").click(function () {
+    grecaptcha.ready(function () {
+      grecaptcha.execute('6Lc1vJQUAAAAAGktFIQ-6hbHTVQXHWF174WTMjDE', { action: 'vision' }).then(function (token) {
+        text2Speech(token);
+      });
+    });
+    // text2Speech();
+  });
+
+  var audio = document.getElementById("tts-audio");
+
+  function text2Speech(token) {
+    showLoadingAudio();
+    $.ajax({
+      url: "https://demo.fpt.ai/hmi/tts",
+      method: "POST",
+      data: $('#tts-demo-form').serialize() + "&token=" + token,
+      statusCode: {
+        429: function () {
+          showFlashError("Demo TTS out of daily quota")
+        }
+      }
+    }).done(function (data) {
+      if (data.error !== undefined && data.error != 0) {
+        showError(data.error)
+      } else {
+        // loadTrack(data.Url, audio);
+        // playTrack(data.Url, audio);
+
+        // $("#tts-audio")[0].src = data.Url;
+        // $("#tts-audio")[0].load();
+
+        // $("#tts-audio")[0].play();
+        let textLen = $('#tts-text').val().length;
+        setTimeout(function () {
+          playTrack(data.async, $("#tts-audio")[0]);
+        }, textLen/50*1000)
+      }
+      // grecaptcha.reset();
+    });
+  };
+
+  function showLoadingAudio() {
+    $('#tts-error').hide();
+    $('#audio').hide();
+    $('#loading').show();
+    $(".form-ai-btn .lds-ellipsis").show();
+    $("#block-tts-audio").hide();
+  };
+
+  function showError(msg) {
+    $('#audio').hide();
+    $('#loading').hide();
+    $('#tts-error p').html(msg);
+    $('#tts-error').show();
+  };
+
+  function showFlashError(msg) {
+    $('#audio').hide();
+    $('#loading').hide();
+    $('#tts-flash-error').text(msg);
+    setTimeout(function () {
+      $('#tts-flash-error').text('');
+    },5000)
+  };
+
+  function showAudioPlayer() {
+    $('#tts-error').hide();
+    $('#loading').hide();
+    $('#audio').show();
+    $("#block-tts-audio .audiojs")[0].setAttribute("class", "audiojs");
+    $(".form-ai-btn .lds-ellipsis").hide();
+    $("#block-tts-audio").show();
+  }
+
+  function playTrack(url, audioElement) {
+    function canplay() {
+      showAudioPlayer();
+      audioElement.removeEventListener('canplay', canplay, false);
+      audioElement.addEventListener('ended', callback, false);
+      audioElement.play();
+    };
+
+    function onError() {
+      setTimeout(function () {
+        loadTrack(url, audioElement);
+      }, 1000);
+    };
+
+    function callback() {
+      audioElement.removeEventListener('error', onError, false);
+      audioElement.removeEventListener('ended', callback, false);
+    };
+
+    audioElement.addEventListener('canplay', canplay, false);
+    audioElement.addEventListener('error', onError, false);
+    loadTrack(url, audioElement);
+  };
+
+  function loadTrack(url, audioElement) {
+    // audioElement.src = url;
+    // audioElement.load(url);
+
+    if (audiojs && audiojs.instances && audiojs.instances.audiojs0) {
+      var ca = audiojs.instances.audiojs0;
+      ca.load(url);
+    } else {
+      audioElement.src = url;
+      audioElement.load(url);
+    }
+  };
+
+  // $(function () {
+  //   playTrack("https://s3-ap-southeast-1.amazonaws.com/openfpt-public/text2speech/female.0.5f00062c60e85cafcf5bd52e5d4040ff.mp3", audio);
+  //   // $(".button-collapse").sideNav({
+  //   //     closeOnClick: true,
+  //   //     draggable: true
+  //   // });
+  // });
+})(jQuery);
