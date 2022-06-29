@@ -1,0 +1,206 @@
+(function ($) {
+  const SILENT_THRESHOLD = 1000;
+  const SILENT_DURATION = 2;
+
+  var isStop = true;
+  var recorder;
+  var ws;
+  var buffer;
+  var result;
+  var audioContext;
+  var countSilentDuration = 0;
+
+  $("#btn-record-mic").click(function () {
+    console.log('btn-record-mic')
+
+    if (!isStop) {
+      closeWS();
+      stop();
+      return;
+    }
+    start()
+
+    if (!audioContext) {
+      audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      if (audioContext.state == 'suspended') {
+        audioContext.resume();
+      }
+      navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
+        var audioInput = audioContext.createMediaStreamSource(stream);
+        var bufferSize = 0;
+
+        recorder = audioContext.createScriptProcessor(bufferSize, 1, 1);
+
+        recorder.onaudioprocess = function (e) {
+          if (!isStop && ws && ws.readyState == ws.OPEN) {
+            if (countSilentDuration > SILENT_DURATION) {
+              closeWS();
+              stop();
+              countSilentDuration = 0;
+              return;
+            }
+
+            buffer = e.inputBuffer.getChannelData(0);
+            drawBuffer(buffer);
+            var int16ArrayData = convertFloat32ToInt16(buffer);
+            countSilentDuration += int16ArrayData.length / audioContext.sampleRate;
+            for (var i = 0; i < int16ArrayData.length; i++) {
+              if (Math.abs(int16ArrayData[i]) > SILENT_THRESHOLD) {
+                countSilentDuration = 0;
+                break;
+              }
+            }
+
+            ws.send(int16ArrayData.buffer);
+          }
+        };
+        audioInput.connect(recorder);
+        recorder.connect(audioContext.destination);
+      }).catch(function (e) { console.log("Error in getUserMedia: "); console.log(e) });
+    }
+
+    initWebSocket(audioContext.sampleRate)
+  });
+
+  function initWebSocket(sampleRate) {
+    start();
+    result = $('#transcripted-text').html();
+    ws = new WebSocket("wss://demo-stream.fpt.ai/ws?content-type=audio/x-raw,+layout=(string)interleaved,+rate=(int)" + sampleRate + ",+format=(string)S16LE,+channels=(int)1");
+    ws.onopen = function () {
+      console.log("Opened connection to websocket");
+    };
+
+    ws.onclose = function () {
+      console.log("Websocket closed");
+      stop();
+    };
+
+    ws.onmessage = function (e) {
+      var resp = jQuery.parseJSON(e.data);
+      if (resp.status == 0 && resp.result && resp.result.hypotheses.length > 0) {
+        var text = resp.result.hypotheses[0].transcript;
+        if (text == '<unk>.') {
+          return;
+        }
+        if (resp.result.final) {
+          result += text + "\n";
+          $('#transcripted-text').html(result);
+          return;
+        }
+
+        $('#transcripted-text').html(isStop ? result : result + text);
+      }
+    };
+
+    return ws
+  }
+
+  function start() {
+    isStop = false;
+    $("#btn-record-mic").html('<strong style="color: #F00;">Stop Record</strong>');
+  }
+
+  function stop() {
+    isStop = true;
+    $('#transcripted-text').html(result);
+    $("#btn-record-mic").html('Record audio');
+  }
+
+  function closeWS() {
+    if (ws && ws.readyState == ws.OPEN) {
+      ws.send("EOS");
+    }
+  }
+
+  function convertFloat32ToInt16(float32ArrayData) {
+    var l = float32ArrayData.length;
+    var int16ArrayData = new Int16Array(l);
+    while (l--) {
+      int16ArrayData[l] = Math.min(1, float32ArrayData[l]) * 0x7FFF;
+    }
+    return int16ArrayData;
+  }
+
+  function drawBuffer(data) {
+    var canvas = document.getElementById("canvas-wave"),
+      width = canvas.width,
+      height = canvas.height,
+      context = canvas.getContext('2d');
+
+    context.clearRect(0, 0, width, height);
+    var step = Math.ceil(data.length / width);
+    var amp = height / 2;
+    for (var i = 0; i < width; i++) {
+      var min = 1.0;
+      var max = -1.0;
+      for (var j = 0; j < step; j++) {
+        var datum = data[(i * step) + j];
+        if (datum < min)
+          min = datum;
+        if (datum > max)
+          max = datum;
+      }
+      context.fillStyle = '#ffffff';
+      context.fillRect(i, (1 + min) * amp, 1, Math.max(1, (max - min) * amp));
+    }
+  }
+
+  $('#stt-file').on('change', function () {
+    if (!isStop) {
+      closeWS();
+      stop();
+    }
+
+    var fileInput = $('#stt-file')[0];
+    var supportedType = ["audio/mpeg", "audio/mp3", "audio/wav", "audio/x-m4a", "audio/m4a", "audio/x-wav", "audio/x-mp3"];
+    var fileObj = fileInput.files[0];
+    if (fileObj && supportedType.indexOf(fileObj.type) > -1) {
+      $.blockUI({ message: '<h3>Processing...</h3>' });
+      var req = new XMLHttpRequest();
+      req.open("POST", 'https://demo.fpt.ai/hmi/asr', true);
+      req.onload = function (oEvent) {
+        $.unblockUI();
+        if (req.status == 429) {
+          showFlashError('Demo STT out of daily quota');
+          return
+        } else if (req.status == 413) {
+          alert('File is too large, please choose the file having max size is 5MB');
+          return
+        } else if (req.status != 200) {
+          alert('Error ! Please try again');
+          return
+        }
+        result = JSON.parse(req.responseText);
+        if (result.hypotheses != undefined && result.hypotheses.length > 0) {
+          $('#transcripted-text').html(result.hypotheses[0].utterance);
+          $('#stt-file').val('');
+        }
+      };
+
+      var reader = new FileReader();
+      reader.onload = function (ev) {
+        grecaptcha.ready(function () {
+          grecaptcha.execute('6Lc1vJQUAAAAAGktFIQ-6hbHTVQXHWF174WTMjDE', { action: 'vision' }).then(function (token) {
+            let data = new FormData();
+            data.append('file', fileObj)
+            data.append('token', token)
+            // The FileReader returns us the bytes from the computer's file system as an ArrayBuffer
+            // req.send(reader.result);
+            req.send(data);
+          });
+        });
+      };
+      reader.readAsArrayBuffer(fileObj);
+    } else {
+      alert('The file format is not supported')
+    }
+
+  });
+
+  function showFlashError(msg) {
+    $('#stt-flash-error').text(msg);
+    setTimeout(function () {
+      $('#stt-flash-error').text('');
+    },5000)
+  };
+})(jQuery);

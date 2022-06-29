@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="176px" height="85px" viewBox="0 0 176 85" enable-background="new 0 0 176 85" xml:space="preserve">
+<linearGradient id="video-pattern-1_1_" gradientUnits="userSpaceOnUse" x1="-213.209" y1="434.9922" x2="-211.6925" y2="436.281" gradientTransform="matrix(94.7523 94.7523 55.1544 -55.1544 -3749.5156 44426.3945)">
+	<stop  offset="0" style="stop-color:#101E76;stop-opacity:0"/>
+	<stop  offset="0.325" style="stop-color:#097EB4;stop-opacity:0.1"/>
+	<stop  offset="0.762" style="stop-color:#04C3E0;stop-opacity:0.2"/>
+	<stop  offset="1" style="stop-color:#00F3FF;stop-opacity:0"/>
+</linearGradient>
+<path id="video-pattern-1" fill="none" stroke="url(#video-pattern-1_1_)" stroke-width="42" d="M17.66,12.494
+	c0,0,59.015,80.51,149.246,40.258"/>
+</svg>
