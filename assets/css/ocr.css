@@ -1,0 +1,422 @@
+/* ===Base==== */
+
+:root {
+    --color-wis: #319e8d;
+}
+
+::placeholder {
+    color: #ccc;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    /* line-height: 1.6rem; */
+    box-sizing: border-box;
+}
+
+body {
+    letter-spacing: 1px;
+    font-family: 'SF Pro Display', sans-serif !important;
+}
+
+section{
+    overflow: revert !important ;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: initial !important;
+}
+
+
+.wis-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+
+@keyframes growth {
+    0% {
+        transform: scaleY(0)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+
+/* ===End Base==== */
+
+.main {
+    padding: 0;
+}
+
+
+/* Intro */
+.intro {
+    position: relative;
+    padding: 0;
+}
+
+.intro-bg {
+    background: url(../img/ocr/banner.jpg) right 38% center no-repeat;
+    padding-top: 50%;
+}
+
+.intro-content {
+    position: absolute;
+    top: 20%;
+    left: 11%;
+}
+
+.intro-content__heading {
+    font-size: 4rem;
+    margin-bottom: 32px;
+}
+
+.intro-content__heading-desc {
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+
+}
+
+.intro-content__heading-desc-text {
+    font-size: 2rem;
+}
+
+.intro-content__btn {
+    display: flex;
+}
+
+.intro-content__btn-trial {
+    border: 1px solid var(--color-wis);
+    margin-right: 12px;
+}
+
+.intro-content__btn-trial-link:hover,
+.intro-content__btn-trial:hover {
+    color: var(--color-wis) !important;
+    opacity: 0.9;
+}
+
+
+.intro-content__btn-contact-link:hover,
+.intro-content__btn-contact:hover {
+    color: #fff !important;
+    opacity: 0.9;
+}
+
+
+.intro-content__btn-trial-link {
+    padding: 14px 19px;
+    display: block;
+    font-size: 1.4rem;
+    /* color: #ec1c2a; */
+    color: var(--color-wis);
+    text-transform: uppercase;
+
+}
+
+.intro-content__btn-contact {
+    /* background-color: #ec1c2a; */
+    background-color: var(--color-wis);
+
+}
+
+.intro-content__btn-contact-link {
+    color: #fff;
+    padding: 14px 19px;
+    display: block;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+/* End Intro */
+
+/* Active */
+
+.active {
+    background-color: #f5f6f9;
+    padding: 0;
+}
+
+.active__page {
+    padding: 80px 24px;
+}
+
+.active__page-tittle {
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.active__page-img img {
+    max-width: 1152px;
+    width: 100%;
+
+}
+
+.active__page-desc {
+    padding: 40px 96px 0;
+    font-size: 1.6rem;
+}
+
+.active__page-desc-text {}
+
+
+/* End Active */
+
+
+/* Support */
+.page-support {}
+
+.support {
+    padding: 20px 24px;
+
+}
+
+.support__desc {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.support__desc-title {
+    font-size: 2.8rem;
+    max-width: 350px;
+}
+
+.support__desc-text {
+    max-width: 550px;
+    font-size: 1.4rem;
+}
+
+.support__list {}
+
+.support__items {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.support__items-img {}
+
+.support__items-desc {
+    margin-left: 16px;
+}
+
+.support__items-desc-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.support__items-desc-func {
+    color: rgba(0, 0, 0, 0.7);
+    min-height: 60px;
+    margin-bottom: 8px;
+
+}
+
+.support__items-desc-other {
+    padding: 7px 0;
+    color: #ec1c2a;
+}
+
+.support__items-desc-other:hover {
+    color: #ec1c2a !important;
+
+}
+
+
+/* End Support */
+
+
+/* Reason */
+.bg-reason {
+    background: url(../img/ocr/reason.jpg) right / cover no-repeat;
+    padding-top: 50%;
+    position: relative;
+}
+
+
+.reason {
+    position: absolute;
+    top: 12%;
+    left: 10%;
+}
+
+.reason__title {
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+}
+
+.reason__list {}
+
+.reason__items {}
+
+/* End Reason */
+
+
+/* Contact */
+
+
+.bg-contact {
+    background-color: #f5f6f9;
+}
+
+.contact {
+    padding: 20px 24px;
+}
+
+.contact__heading {
+    position: relative;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.contact__underline {
+
+    width: 70px;
+    height: 4px;
+    background-color: var(--color-wis);
+    top: 100%;
+    right: 50%;
+    margin: 30px auto;
+
+}
+
+.contact__form {
+    max-width: 800px;
+}
+
+.contact__desc {
+    max-width: 555px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.contact__form {
+    display: block;
+    margin: auto;
+
+
+}
+
+.contact__form-list {}
+
+.contact__form-list-dropdown {
+    position: relative;
+}
+#dropdown:hover,
+.contact__form-item-icon:hover{
+    cursor: pointer;
+
+}
+
+#dropdown:focus~.contact__form-item-dropdown{
+    display: block;
+}
+
+.contact__form-item {
+    padding: 4px 11px;
+    height: 48px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 0 8px;
+    transition: all ease-in-out 0.1s;
+}
+
+.contact__form-item-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: #d9d9d9;
+    pointer-events: none;
+
+}
+
+
+.contact__form-item-dropdown {
+    position: absolute;
+    list-style: none;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 10%);
+    background-color: #fff;
+    top: 105%;
+    left: 15px;
+    z-index: 9;
+    right: 0;
+    border-radius: 2px;
+    padding: 0;
+    display: none;
+    transform-origin:  top center;
+    animation: growth ease-in 0.2s forwards;
+}
+
+.contact__form-item-dropdown-select {
+    padding: 6px 11px;
+}
+
+.contact__form-item-dropdown-select:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 5%);
+}
+
+
+
+.contact__form-item-half {
+    width: 50%;
+}
+
+.contact__form-item-full {
+    width: 100%;
+}
+
+.contact__form-item:hover{
+    border-color: var(--color-wis);
+}
+
+.contact__form-item:focus {
+    box-shadow: 0 0 0 2px rgb(49, 158, 141, 20%);
+    border-color: var(--color-wis);
+    outline: none;
+}
+
+.contact__form-item--message {
+    overflow-y: scroll;
+    resize: none;
+    height: 76px;
+}
+
+
+.contact__btn {
+    background-color: var(--color-wis);
+    color: #fff;
+    width: 124px;
+    height: 44px;
+    border: none;
+    border-radius: 2px;
+}
+
+.contact__btn:hover {
+    opacity: 0.9;
+}
+
+/* End Contact */
+
+/* footer{
+    display: none !important; 
+} */
