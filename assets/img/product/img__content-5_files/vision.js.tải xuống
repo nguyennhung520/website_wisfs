@@ -1,0 +1,207 @@
+(function ($) {
+  ///Upload CMT
+  $('.fptai-loading-image, #backside-information-id').hide();
+  $('#fptai-upload-image-id').on('change', function (event) {
+    grecaptcha.ready(function () {
+      grecaptcha.execute('6Lc1vJQUAAAAAGktFIQ-6hbHTVQXHWF174WTMjDE', { action: 'vision' }).then(function (token) {
+        id_recognize(token)
+      });
+    });
+    // id_recognize('token');
+    function id_recognize(token) {
+      $('#pn_result_id > .row').hide();
+      $('#pn_result_id > .fptai-loading-image').show();
+      let data = new FormData();
+      data.append('image', event.target.files[0]);
+      data.append('token', token);
+      $('#pn_result_id .text-error-result').hide();
+      $.ajax({
+        url: 'https://demo.fpt.ai/vision/cmt',
+        type: 'POST',
+        data: data,
+        cache: false,
+        dataType: 'json',
+        processData: false, // Don't process the files
+        contentType: false, // Set content type to false as jQuery will tell the server its a query string request
+        success: function (data, textStatus, jqXHR) {
+          $('#pn_result_id > .fptai-loading-image').hide();
+          let reader = new FileReader();
+          reader.onload = function (e) {
+            $('#fptai-vision__result-image-id').attr('src', e.target.result);
+          };
+          reader.readAsDataURL(event.target.files[0]);
+          if (data.errorCode !== 0) {
+            $('#pn_result_id .text-error-result').append(`<p class="text-danger">${data.errorMessage}</p>`);
+            $('#pn_result_id > .row').hide();
+          } else {
+            $('#pn_result_id .text-error-result').hide();
+            $('#pn_result_id > .row').show();
+            if (data.data[0].home) {
+              $('#vision_hometown').text(data.data[0].home);
+            }
+
+            if (data.data[0].nationality) {
+              $('#vision_nationality').text(data.data[0].nationality);
+            }
+
+            if (data.data[0].doe) {
+              $('#vision_expire').text(data.data[0].doe);
+            }
+
+            if (data.data[0].issue_date) {
+              $('#vision-ethnicity-id').text(data.data[0].ethnicity);
+              $('#vision-date-id').text(data.data[0].issue_date);
+              $('#vision-religion-id').text(data.data[0].religion);
+              $('#vision-location-id').text(data.data[0].issue_loc);
+              $('#backside-information-id').show();
+              $('#facade-information-id').hide();
+            } else {
+              $('#vision_full_name').text(data.data[0].name);
+              $('#vision_id').text(data.data[0].id);
+              $('#vision_birthday').text(data.data[0].dob);
+              $('#vision_gender').text(data.data[0].sex);
+              $('#vision_address').text(data.data[0].address);
+              $('#backside_information-id').hide();
+              $('#facade_information-id').show();
+            }
+          }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          console.log('ERRORS: ' + textStatus);
+        }
+      });
+    }
+  });
+  //////////// End of upload CMT //////////////////////
+
+  /////////// Uload BLX //////////////////////////////
+  $('#fptai-upload-image-license').on('change', function (event) {
+    grecaptcha.ready(function () {
+      grecaptcha.execute('6Lc1vJQUAAAAAGktFIQ-6hbHTVQXHWF174WTMjDE', { action: 'vision' }).then(function (token) {
+        blx_recognize(token)
+      });
+    });
+
+    function blx_recognize (token) {
+      $('#pn_result_license > .row').hide();
+      $('#pn_result_license > .fptai-loading-image').show();
+      let data = new FormData();
+      data.append('image', event.target.files[0]);
+      data.append('token', token);
+      $('#pn_result_license .text-error-result').hide();
+      $.ajax({
+        url: 'https://demo.fpt.ai/vision/blx',
+        type: 'POST',
+        data: data,
+        cache: false,
+        dataType: 'json',
+        processData: false, // Don't process the files
+        contentType: false, // Set content type to false as jQuery will tell the server its a query string request
+        success: function (data, textStatus, jqXHR) {
+          $('#pn_result_license > .fptai-loading-image').hide();
+          let reader = new FileReader();
+          reader.onload = function (e) {
+            $('#fpta-vision__result-image-blx').attr('src', e.target.result);
+          };
+          reader.readAsDataURL(event.target.files[0]);
+          if (data.errorCode !== 0) {
+            $('#pn_result_license .text-error-result').append(`<p class="text-danger">${data.errorMessage}</p>`);
+            $('#pn_result_license > .row').hide();
+          } else {
+            const response = data.data[0];
+            $('#pn_result_license .text-error-result').hide();
+            $('#pn_result_license > .row').show();
+            $('#blx-vision-full-name').text(response.name);
+            $('#blx-vision-id').text(response.id);
+            $('#blx-vision-birthday').text(response.dob);
+            $('#blx-vision-nation').text(response.nation);
+            $('#blx-vision-address').text(response.address);
+
+            if (response.place_issue) {
+              $('#blx-place-of-issue').show().text(response.place_issue);
+            } else {
+              $('#blx-place-of-issue').hide();
+            }
+
+            if (response.class) {
+              $('#blx-vision-class').show().text(response.class);
+            } else {
+              $('#blx-vision-class').hide();
+            }
+
+            $('#blx-vision-expire').text(response.doe);
+            $('#blx-vision-date').text(response.date);
+          }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          console.log('ERRORS: ' + textStatus);
+        }
+      });
+    }
+  });
+  //////////// End of upload BLX ////////////////////
+
+  /////////// Upload Passport //////////////////////////////
+  $('#fptai-upload-image-passport').on('change', function (event) {
+    grecaptcha.ready(function () {
+      grecaptcha.execute('6Lc1vJQUAAAAAGktFIQ-6hbHTVQXHWF174WTMjDE', { action: 'vision' }).then(function (token) {
+        pp_recognize(token)
+      });
+    });
+
+    var pp_recognize = function (token) {
+      $('#pn_result_passport > .row').hide();
+      $('#pn_result_passport .fptai-loading-image').show();
+      let data = new FormData();
+      data.append('image', event.target.files[0]);
+      data.append('token', token);
+      $('.fptai-vision__result p.text-error-result').hide();
+      $.ajax({
+        url: 'https://demo.fpt.ai/vision/passport',
+        type: 'POST',
+        data: data,
+        cache: false,
+        dataType: 'json',
+        processData: false, // Don't process the files
+        contentType: false, // Set content type to false as jQuery will tell the server its a query string request
+        success: function (data, textStatus, jqXHR) {
+          $('#pn_result_passport .fptai-loading-image').hide();
+          let reader = new FileReader();
+          reader.onload = function (e) {
+            $('#fpta-vision__result-image-pp').attr('src', e.target.result);
+          };
+          reader.readAsDataURL(event.target.files[0]);
+          if (data.error) {
+            $('#pn_result_passport .text-error-result').append(`<p class="text-danger">${data.error}</p>`);
+            $('#pn_result_passport > .row').hide();
+          } else {
+            const response = data.data[0];
+            $('#pn_result_passport p.text-error-result').hide();
+            $('#pn_result_passport > .row').show();
+            $('#pp-vision-id').text(response.passport_number);
+            $('#pp-vision-full-name').text(response.name);
+            $('#pp-vision-gender').text(response.sex);
+            $('#pp-vision-birthday').text(response.dob);
+            $('#pp-vision-pob').text(response.pob);
+            $('#pp-vision-id-number').text(response.id_number);
+            $('#pp-vision-doi').text(response.doi);
+            $('#pp-vision-doe').text(response.doe);
+
+            // if(response.class) {
+            //     $('#pp-vision-class').show().find('span').text(response.class);
+            // } else {
+            //     $('#pp-vision-class').hide();
+            // }
+
+            // $('#pp-vision-expire').text(response.doe);
+            // $('#pp-vision-date').text(response.date);
+          }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          console.log('ERRORS: ' + textStatus);
+        }
+      });
+    }
+  });
+  //////////// End of upload PP ////////////////////
+})(jQuery);

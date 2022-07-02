@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>video icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="58.1952343%" y1="74.2301709%" x2="-4.29612892%" y2="22.4382639%" id="linearGradient-1">
+            <stop stop-color="#82FEFD" offset="0%"></stop>
+            <stop stop-color="#4EB0E8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10_CONVERSATION" transform="translate(-1133.000000, -1499.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M1161,1499 C1145.5608,1499 1133,1511.5608 1133,1527 C1133,1542.4392 1145.5608,1555 1161,1555 C1176.4392,1555 1189,1542.4392 1189,1527 C1189,1511.5608 1176.4392,1499 1161,1499 Z M1169.76329,1527.41298 L1157.84662,1534.913 C1157.75508,1534.9705 1157.64837,1535 1157.54167,1535 C1157.455,1535 1157.36779,1534.981 1157.28871,1534.942 C1157.11104,1534.8555 1157,1534.6855 1157,1534.5 L1157,1519.49995 C1157,1519.31445 1157.11104,1519.14445 1157.28871,1519.05795 C1157.46637,1518.97095 1157.68088,1518.98295 1157.84717,1519.08695 L1169.76383,1526.58697 C1169.91117,1526.67997 1170,1526.83447 1170,1526.99997 C1170,1527.16548 1169.91117,1527.31998 1169.76329,1527.41298 Z" id="video-icon"></path>
+        </g>
+    </g>
+</svg>
