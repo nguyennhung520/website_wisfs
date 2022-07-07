@@ -37,9 +37,9 @@ if (portfolioContainer) {
   on('click', '#portfolio-flters li', function(e) {
     e.preventDefault();
     portfolioFilters.forEach(function(el) {
-      el.classList.remove('templates__option-items--active');
+      el.classList.remove('filter-active');
     });
-    this.classList.add('templates__option-items--active');
+    this.classList.add('filter-active');
 
     portfolioIsotope.arrange({
       filter: this.getAttribute('data-filter')

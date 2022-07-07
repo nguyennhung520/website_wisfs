@@ -420,7 +420,7 @@ body {
 .templates__options-pages {}
 
 .templates__options-pages-list {
-    justify-content: center;
+    justify-content: center !important;
 }
 
 .templates__options-pages-items {
