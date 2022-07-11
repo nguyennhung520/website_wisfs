@@ -109,7 +109,7 @@ a:hover{
 
 .main__btn-help:hover
 {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     background-color: #1e1666;
 }
 
