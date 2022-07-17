@@ -1,0 +1,286 @@
+/* BASE */
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    /* line-height: 1.6rem; */
+    box-sizing: border-box;
+}
+
+body {
+    letter-spacing: 1px;
+    font-family: 'IBM Plex Sans Condensed' !important;
+}
+
+
+
+
+/* END BASE */
+
+
+/* ==== MAIN ===== */
+/* Intro */
+.main {
+    padding-top: 0;
+}
+
+.intro {
+    padding-top: 0;
+}
+
+.intro-bg {}
+
+.intro__text {
+    background-color: #101e76;
+    padding: 120px 0 320px;
+    text-align: center;
+}
+
+.intro__text-conver {
+    font-size: 1.7rem;
+    color: #6f78ac;
+}
+
+.intro__text-title {
+    font-size: 5rem;
+    color: #63c6df;
+
+}
+
+.intro__text-source {
+    font-size: 1.6rem;
+    color: #6f78ac;
+    display: flex;
+    justify-content: center;
+}
+
+.intro__text-source-by {
+    position: relative;
+    display: block;
+
+}
+
+.intro__text-source-by::after {
+    content: "|";
+    display: inline-block;
+    margin: 0 10px;
+
+}
+
+.intro__text-source-date {}
+
+.intro__content {
+    margin-top: -270px;
+}
+
+
+.intro__content-main-feature {
+    color: 1.6rem;
+    font-size: #1f1f1f;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.intro__content-main-title {
+    color: #101e76;
+    font-size: 2rem;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.intro__content-main-desc {
+    color: #1f1f1f;
+    font-size: 1.6rem;
+}
+
+.intro__content-main-desc--italics {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.intro__content-main-desc--italics a {
+    color: inherit;
+}
+
+.intro__content-main-desc--italics a:hover {
+    color: #FB722F;
+    text-decoration: none;
+
+}
+
+.intro__content-main-desc-img {
+    width: 100%;
+}
+
+.intro__content-main-desc--market {
+    position: relative;
+}
+
+.intro__content-main-desc--market::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #000;
+    top: 8px;
+    left: -12px;
+}
+
+
+.intro__content-border{
+    border-top: 1px solid rgba(220,220,220,0.7);
+    margin-top: 20px;
+}
+
+.intro__content-link {
+    display: flex;
+    justify-content: space-between;
+margin-top: 20px;    
+}
+
+
+.intro__content-link-social {
+    display: flex;
+    color: #1f1f1f;
+    
+
+}
+
+.intro__content-link-social-item {
+    margin-right: 10px;
+}
+
+
+
+
+.intro__content-link-social-item i {
+
+    color: #B7B7B7;
+    transition: all ease 0.3s;
+}
+
+.intro__content-link-social-item i:hover {
+    color: #101e76;
+}
+
+.intro__content-link-hastag {
+    display: flex;
+}
+
+.intro__content-link-hastag-item {
+    margin-right: 10px;
+    color: #b7b7b7;
+    transition: all ease 0.3s;
+
+}
+
+.intro__content-link-hastag-item:hover{
+    text-decoration: none;
+    color: #101e76;
+
+}
+
+
+/* End Intro */
+
+
+/* Blog */
+.blog{
+
+}
+
+.blog__title{
+    color: #101e76;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.blog__list{
+
+}
+
+.blog__item{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.blog__item-bg{
+    padding-top: 50%;
+    filter: brightness(50%);
+    transition: all ease 0.6s;
+    display: block;
+}
+
+
+.blog__item-bg-1{
+  background: url(../img/chatbot/blog1.jpg)  center/ cover;  
+}
+.blog__item-bg-2{
+    background: url(../img/chatbot/blog2.jpg) center/ cover;  
+
+}
+
+.blog__item-content{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 30px 45px;
+    /* display: none; */
+}
+
+.blog__item:hover .blog__item-bg{
+    transform: scale(1.05);
+}
+
+.blog__item-content-heading{
+    color: #63c6df;
+    font-size: 2rem;
+    display: block;
+}
+
+.blog__item-content-heading:hover{
+    color: #63c6df;
+    text-decoration: none;
+}
+
+.blog__item-content-more{
+    color: #fff;
+    font-size: 1.7rem;
+    display: block;
+}
+
+.blog__item-content-more:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.blog__item-content-more i{
+    transition: all ease 0.5s;
+}
+
+.blog__item-content-more:hover i{
+    transform: translateX(10px);
+}
+
+
+/* End Blog */
+
+
+
+
+
+
+
+/* ==== END MAIN ===== */
