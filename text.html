@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to speech</title>
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Template Main CSS File -->
+    <script src="https://kit.fontawesome.com/987e3ea818.js" crossorigin="anonymous"></script>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/text.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+
+</head>
+<body>
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-flex align-items-center">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+            <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope d-flex align-items-center"><a
+                        href="mailto:contact@example.com">contact@example.com</a></i>
+                <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+            </div>
+            <div class="social-links d-none d-md-flex align-items-center">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <h1 class="logo">
+                <a href="index.html"><img src="assets/img/bsg.png"></a>
+            </h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <li class="dropdown"><a href="#product"><span>Product</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Ekyc</a></li>
+                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
+                                        class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <!-- Content__main -->
+    <div class="content__main">
+        <div class="container">
+            <div class="row">
+                <div class="content__main-list">
+                    <div class="content__main-item-1">
+                        <h1 class="content__main-item--heading ">Convert text into Vietnamese voice</h1>
+                        <div class="content__main--item-btn"></div>
+                        <a href="" class="content__main--item-start">Get Started</a>
+                        <a href="" class="content__main--item-experience">Request a demo</a>
+                    </div>
+                    <div class="content__main-item-2">
+                        <input type="text" class="mb-3 content__main--item--input">
+                        <div class="dropdow__list">
+                            <div class="dropdown dropdow__author mb-3">
+                                <button class="btn dropdown-toggle" data-bs-toggle="dropdown">Northern Accent: Ban Mai Ace (female)</button>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a href="">Southern : Minh Quang Ace (male)</a></li>
+                                    <li class="dropdown-item"><a href="">Northen : Thu Minh Ace (female)</a></li>
+                                    <li class="dropdown-item"><a href="">Southern : Linh San Ace (female)</a></li>
+                                    <li class="dropdown-item"><a href="">Southern : Lan Nhi Ace (female)</a></li>
+                                    <li class="dropdown-item"><a href="">Northern : Ban Mai (female))</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown dropdow__author">
+                                <button class="btn dropdown-toggle" data-bs-toggle="dropdown">Bình thường</button>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a href="">Bình thường</a></li>
+                                    <li class="dropdown-item"><a href="">Rất chậm</a></li>
+                                    <li class="dropdown-item"><a href="">Chậm</a></li>
+                                    <li class="dropdown-item"><a href="">Nhanh</a></li>
+                                    <li class="dropdown-item"><a href="">Rất nhanh</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content__main-item-2__list">
+                            <div class="content__main-item-2__item">
+                                <div class="content__main--item-btn mt-3">
+                                    <a href="" class="content__main--item-start color-text">Generate audio</a>
+                                </div>
+                            </div>
+                            <div class="content__main-item-2__item audio mt-3">
+                                <audio controls class="audio--file" src="./assets/img/text/banmai-mp3.mp3"></audio>
+                            </div>
+                        </div>
+                        <div class="content__main-item-2-item-link">
+                            <span>To download audio files, please create an account and log in:</span>
+                            <a href="">https://voicemaker.fpt.ai/</a>
+                        </div>
+
+                    </div>
+                    <div class="content__main-item-3">
+                        <img src="./assets/img/text/img-content-1.png" alt="" class="content__main-item-3--img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content__Main -->
+    <section class="content__section">
+        <div class="container">
+            <div class="row">
+                <div class="content__section--list">
+                    <div class="content__section--item">
+                        <h1 class="content__section--item-heading">FPT.AI eKYC provides state-of-the-art Deep Learning algorithms to detect and compare the portrait in personal identification documents such as ID cards, driver’s licenses, passports… for real face authentication. Simplify verification processes into mere seconds instead of hours or days.</h1>
+                        <a href="https://youtu.be/EMis6GC9Plw" class="content__section--item-link">
+                            <span class="content__section--item-link-span">Watch Demo Video</span>
+                            <i class="content__section--item-icon fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
+                    <div class="content__section--item item-1">
+                        <img src="./assets/img/text/img-content-link.jpg" alt="" class="content__section--item-img">
+                        <a href="https://www.youtube.com/watch?v=EMis6GC9Plw&t=5s&ab_channel=FPT.AI" class="content__section--item-link-youtube">
+                            <img src="./assets/img/product/img__content-6.svg" alt="" class="content__section--item-link-iconyt">
+                        </a>
+                    </div>
+                    <div class="content__section--item">
+                        <img src="./assets/img/product/img__content-1.svg" alt="" class="content__section--item-img-1">
+                    </div>
+                    <div class="content__section--item">
+                        <img src="./assets/img/product/img__content-2.svg" alt="" class="content__section--item-img-2">
+                    </div>
+                    <div class="content__section--item">
+                        <img src="./assets/img/product/img__content-3.svg" alt="" class="content__section--item-img-3">
+                    </div>
+                    <div class="content__section--item">
+                        <img src="./assets/img/product/img__content-4.svg" alt="" class="content__section--item-img-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content__more">
+        <div class="container">
+            <div class="row">
+                <h1 class="content__more--heading">Why FPT.AI eKYC?</h1>
+                <div class="content__more--list">
+                    <div class="content__more--item">
+                        <a href="" class="content__more--item-link">Natural voice with regional diversity</a>
+                        <span class="content__more--item-span">FPT.AI TTS service provides natural voice response, automatic pause when reading long sentences, combined with expression. The product is developed exclusively for the Vietnamese market, based on the specialized voice research of each region in Vietnam. We currently provide over 7 different voices from different regions in Vietnam.</span>
+                        <a href="https://youtu.be/EMis6GC9Plw" class="content__more--item-linkst">
+                            <span class="content__more--item-link-span">Get Started</span>
+                            <i class="content__more--item-icon fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
+                    <div class="content__more--item-2 mr-60">
+                        <img src="./assets/img/text/img-content-map.png" alt="" class="content__more--item-img size__L">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content__more">
+        <div class="container">
+            <div class="row">
+                <div class="content__more--list content__more-row-reverse">
+                    <div class="content__more--item ">
+                        <a href="" class="content__more--item-link">Easy connection</a>
+                        <span class="content__more--item-span">You can send the text you want to convert to FPT.AI’s API or directly convert text into audio file on website and download as popular formats MP3, WAV,…
+                            You have access to the service without signing any contract.</span>
+                        <a href="https://youtu.be/EMis6GC9Plw" class="content__more--item-linkst">
+                            <span class="content__more--item-link-span">Get Started</span>
+                            <i class="content__more--item-icon fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
+                    <div class="content__more--item-2 content__more--item--l ">
+                        <img src="./assets/img/text/img-content-music.png" alt="" class="content__more--item-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content__more">
+        <div class="container">
+            <div class="row">
+                <div class="content__more--list">
+                    <div class="content__more--item">
+                        <a href="" class="content__more--item-link">Quick Response</a>
+                        <span class="content__more--item-span">FPT.AI's APIs can respond quickly to all customer requests and scale to meet the demand for unexpected system loads.</span>
+                        <a href="https://youtu.be/EMis6GC9Plw" class="content__more--item-linkst">
+                            <span class="content__more--item-link-span">Get Started</span>
+                            <i class="content__more--item-icon fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
+                    <div class="content__more--item-2">
+                        <img src="./assets/img/text/-img-content-listen.png" alt="" class="content__more--item-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Package  -->
+    <section class="package">
+        <div class="container">
+            <h1 class="package__header">Choose Your Package</h1>
+            <div class="package__list row">
+                <div class="package__item mt-60 col">
+                    <h4 class="package__item-heading">Free</h4>
+                    <div class="package__item-body">
+                        <span class="package__item-body-text">100,000 characters/month</span>
+                        <p class="package__item-body-p">No other charge</p>
+                    </div>
+                    <div class="package__item-end">
+                        <span class="package__item-end-span">No technical support</span>
+                    </div>
+                    <div class="package__item-link">
+                        <a href="">Choose Plan</a>
+                    </div>
+                </div>
+                <div class="package__item col">
+                    <h1 class="package__item-heading--XL">Premium</h1>
+                    <div class="package__item-body-1">
+                        <span class="package__item-body-text heading-item ">Pay as actual usage</span>
+                        <p class="package__item-body-p font-16">No other charge</p>
+                    </div>
+                    <div class="package__item-body-2">
+                        <span class="package__item-end-span">High speed of generation</span><br>
+                        <span class="package__item-end-span">No technical support</span>
+                    </div>
+                    <div class="package__item-body-3">
+                        <span class="package__item-body-unit">From VND</span>
+                        <span class="package__item-body-price">200,000</span>
+                        <span class="package__item-body-package">/ package</span>
+                    </div>
+                    <div class="package__item-link-body-3">
+                        <a href="">Choose Plan</a>
+                    </div>
+                </div>
+                <div class="package__item col mt-60">
+                    <h4 class="package__item-heading">Business</h4>
+                    <div class="package__item-body">
+                        <span class="package__item-body-text">Please contact us for more information</span>
+                    </div>
+                    <div class="package__item-end">
+                        <span class="package__item-end-span">Standard Technical Support</span>
+                    </div>
+                    <div class="package__item-link">
+                        <a href="">Contact now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <p class="note--text">*Note: The above quotation doesn’t include: Taxes and other related cost/ fee & Software service development.</p>
+    <!-- Contact -->
+    <section class="contact mt-60">
+        <div class="contact__showw">
+            <div class="container">
+                <div class="row contact__list">
+                    <h1 class="contact__item--heading">
+                        Are you ready to experience the best Vietnamese Text to Speech service?
+                    </h1>
+                    <a href="" class="contact__item--linkk">Get stared now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>WIS<span>.</span></h3>
+                        <p>
+                            A108 Adam Street <br> New York, NY 535022<br> United States <br><br>
+                            <strong>Phone:</strong> +1 5589 55488 55<br>
+                            <strong>Email:</strong> info@example.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Social Networks</h4>
+                        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-4">
+            <div class="copyright">
+                &copy; Copyright <strong><span>WIS</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
+                Designed by <a href="https://bootstrapmade.com/">WIS</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
