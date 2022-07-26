@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer vision</title>
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/987e3ea818.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/computer.css">
+</head>
+<body>
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-flex align-items-center">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+            <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope d-flex align-items-center"><a
+                        href="mailto:contact@example.com">contact@example.com</a></i>
+                <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+            </div>
+            <div class="social-links d-none d-md-flex align-items-center">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <h1 class="logo">
+                <a href="index.html"><img src="assets/img/bsg.png"></a>
+            </h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <li class="dropdown"><a href="#product"><span>Product</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="product.html">Ekyc</a></li>
+                            <li><a href="speech.html">Speech to text</a></li>
+                            <li><a href="ocr.html">OCR</a></li>
+                            <li><a href="text.html">Text to speech</a></li>
+                            <li><a href="chatbot.html">Chat sell</a></li>
+                            <li><a href="mxh-app.html">Social network</a></li>
+                            <li><a href="callbot.html">Call bot</a></li>
+                            <li><a href="">Chat app</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href=""><span>Blog</span><i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="blog-sidebar.html">Blog sidebar</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href=""><span>Page</span><i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="page-404.html">Page 404</a></li>
+                            <li><a href="approach.html">Our approach</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Main -->
+    <div class="main">
+        <section id="hero" class="d-flex align-items-center">
+            <!-- Carousel wrapper -->
+            <div class="container-fluid">
+    
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-innerr">
+                        <div class="carousel-item active">
+                            <div class="info ms-4">
+                                <h1>Computer vision for real-time face analysis</h1>
+                                <p>The problems that your business encounters don’t change very often. The way you can solve those problems just has, with AI Lab.</p>
+                                <div class=" header__menu-options-login">
+                                    Get API Key
+                                </div>
+                            </div>
+                            <img src="./assets/img/computer/ai-2.png" alt="" class="item-2-img-4">
+                            <img src="./assets/img/computer/ai-1.png" alt="" class="item-2-img-3">
+                            <img src="./assets/img/computer/ai-4.png" alt="" class="item-2-img-1">
+                            <img src="./assets/img/computer/ai-3.png" alt="" class="item-2-img-2">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="info ms-4">
+                                <h1>Advanced AI Software powered by computer vision for real-time face analysis</h1>
+                                <p>The problems that your business encounters don’t change very often. The way you can solve those problems just has, with AI Lab.</p>
+                                <div class=" header__menu-options-login">
+                                    Get API Key
+                                </div>
+                                <img src="./assets/img/computer/tron-1.svg" alt="" class="item__img-1">
+                                <img src="./assets/img/computer/tron-mini.svg" alt="" class="item__img-2">
+                                <img src="./assets/img/computer/tron-mini.svg" alt="" class="item__img-3">
+                                <img src="./assets/img/computer/tron-mini.svg" alt="" class="item__img-4">
+                                <img src="./assets/img/computer/x-1.svg" alt="" class="item__img-5">
+                                <img src="./assets/img/computer/ai-1.png" alt="" class="item__img-6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="customer">
+            <div class="container">
+                <div class="row customer__header">
+                    <div data-aos="fade-right" class="col customer__text">
+                        <h3 class="customer__text-1">
+                            Endless possibilities at your fingertips
+                        </h3>
+                    </div>
+                    <div data-aos="fade-left" class="col customer__text">
+                        <p class="customer__text-2">From creating better customer experiences on your website to monitoring your residential space for safety, the practical possibilities of computer vision AI are endless</p>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="row customer__list mt-5">
+                    <div class="col customer__item">
+                        <img src="./assets/img/computer/customer-1.png" alt="" class="customer__item-img">
+                        <a href="#" class="customer__item-link">Digital business AI</a>
+                        <p class="customer__item-text">The most of artificial intelligence by applying it to strategic digital business.</p>
+                    </div>
+                    <div class="col customer__item">
+                        <img src="./assets/img/computer/customer-2.png" alt="" class="customer__item-img">
+                        <a href="#" class="customer__item-link">Snap and Search</a>
+                        <p class="customer__item-text">Enabling your customers to snap a photo of a product with their</p>
+                    </div>
+                    <div class="col customer__item">
+                        <img src="./assets/img/computer/customer-3.png" alt="" class="customer__item-img">
+                        <a href="#" class="customer__item-link">Identify Human Behavior</a>
+                        <p class="customer__item-text">Identifying human behaviors and traffic patterns within your physical space</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="more">
+            <div class="container">
+                <div class="row more__list">
+                    <div data-aos="fade-down-right" class="col more__item">
+                        <img src="./assets/img/computer/more-1.png" alt="" class="more__item-img">
+                    </div>
+                    <div data-aos="fade-down-left" class="col more__item">
+                        <h3 class="more__item-heading mb-5">Generate more leads without forms</h3>
+                        <p class="more__item-text">Rather than forcing high intent prospects jump through hoops to talk to your team. The target audience it will be communicating with the overall approach of your brand.</p>
+                        <div class="more__item-body">
+                            <i class="fa-solid fa-anchor more__item-body-icon"></i>
+                            <p class="more__item-body-text">Users can navigate formerly gated content there, similar to putting all your best content on your form.</p>
+                        </div>
+                        <div class="more__item-link">
+                            <div class=" more__btn">
+                                More about us
+                            </div>
+                            <div class="more__item-link-a">
+                                <a href="#">Discover our features </a>
+                                <i class="fa-solid fa-angle-right more__item-link-a-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="row about__list">
+                    <div data-aos="fade-right" class="col about__item">
+                        <h3 class="about__item-heading">What client says about us</h3>
+                        <p class="about__item-text">We help you generate high-quality online sales leads by implementing highly structured, persuasive Internet marketing campaigns.</p>
+                        <div class="about__item-btn">
+                            <i class="fa-solid fa-play about__item-btn-icon"></i>
+                            <a href="#" class="about__item-btn-link">See video intro!</a>
+                        </div>
+                        <img src="./assets/img/computer/about-1.png" alt="" class="about__item-img">
+                    </div>
+                    <div data-aos="fade-left" class="col about__item">
+                        <div class="about__item-1 mb-5">
+                            <div class="about__item-1-list">
+                                <h4 class="about__item-1-header">Miler Smith</h4>
+                                <p class="about__item-1-body">We design & build chatbots to automate customer service, lead generation.</p>
+                                <p class="about__item-1-tag">- CEO at Epi Technologies</p>
+                            </div>
+                            <div>
+                                <img src="./assets/img/computer/about-2.png" alt="" class="about__item-1-img">
+                            </div>
+                        </div>
+                        <div class="about__item-1 mb-5">
+                            <div class="about__item-1-list about__item-bg">
+                                <h4 class="about__item-1-header text-while">Mike Jackson</h4>
+                                <p class="about__item-1-body text-while">We design & build chatbots to automate customer service, lead generation.</p>
+                                <p class="about__item-1-tag text-while">- Manager at VR Studio</p>
+                            </div>
+                            <div>
+                                <img src="./assets/img/computer/about-3.png" alt="" class="about__item-1-img">
+                            </div>
+                        </div>
+                        <div class="about__item-1 mb-5">
+                            <div class="about__item-1-list">
+                                <h4 class="about__item-1-header">Katherine Hogan</h4>
+                                <p class="about__item-1-body">We design & build chatbots to automate customer service, lead generation.</p>
+                                <p class="about__item-1-tag">- Technical Manager at VRD</p>
+                            </div>
+                            <div>
+                                <img src="./assets/img/computer/about-4.png" alt="" class="about__item-1-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="orther">
+            <div class="container-fluid">
+                <div class="row orther__list">
+                    <div data-aos="fade-right" class="col-sm orther__item">
+                        <h3 class="orther__item-header">
+                            Client’s success stories
+                        </h3> 
+                        <p class="orther__item-text">Are you looking for ways to increase conversions but <br> having a hard time turning visits into sales?</p>
+                        <div class=" orther__item-btn">
+                            Schedule a call
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" class="col-sm orther__item">
+                        <a href="#" class="col-sm orther__item-list">
+                            <div class="orther__item-item">
+                                <i class="fa-solid fa-magnifying-glass orther__item-list-icon"></i>
+                                <p class="orther__item-list-title">Retail</p>
+                                <h3 class="orther__item-list-header">Zero in on Customer Behavior</h3>
+                            </div>
+                        </a>
+                        <a href="#" class="col-sm orther__item-list">
+                            <div class="orther__item-item">
+                                <i class="fa-solid fa-magnifying-glass orther__item-list-icon"></i>
+                                <p class="orther__item-list-title">human-robot</p>
+                                <h3 class="orther__item-list-header">Designing human-robot collaborations</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="orther__more">
+            <div class="container-fluid">
+                <div class="row">
+                    <div data-aos="fade-up" class="col-sm orther__item">
+                        <a href="#" class="col-sm orther__item-listt">
+                            <div class="orther__item-item">
+                                <i class="fa-solid fa-magnifying-glass orther__item-list-icon"></i>
+                                <p class="orther__item-list-title">Kroger</p>
+                                <h3 class="orther__item-list-header">AI In Prepare For The 4th Industrial Revolution</h3>
+                            </div>
+                        </a>
+                        <a href="#" class="col-sm orther__item-listt">
+                            <div class="orther__item-item">
+                                <i class="fa-solid fa-magnifying-glass orther__item-list-icon"></i>
+                                <p class="orther__item-list-title">Analysis</p>
+                                <h3 class="orther__item-list-header">Automated analysis of retinal imaging</h3>
+                            </div>
+                        </a>
+                        <a href="#" class="col-sm orther__item-listt">
+                            <div class="orther__item-item">
+                                <i class="fa-solid fa-magnifying-glass orther__item-list-icon"></i>
+                                <p class="orther__item-list-title">life</p>
+                                <h3 class="orther__item-list-header">Looking at AI-focused</h3>
+                            </div>
+                        </a>
+                        <a href="#" class="col-sm orther__item-listt">
+                            <div class="orther__item-item">
+                                <i class="fa-solid fa-magnifying-glass orther__item-list-icon"></i>
+                                <p class="orther__item-list-title">Retail</p>
+                                <h3 class="orther__item-list-header">Using AI in a medical training game</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="need">
+            <div class="container">
+                <div class="row need__list">
+                    <div data-aos="fade-right" class="col need__item">
+                        <h2 class="need__item-heading">Building everything you need for your business</h2>
+                        <p class="need__item-content">AI Lab is an artificial intelligence company that excels in visual recognition, solving real-world problems for businesses.</p>
+                        <div class="need__item-list">
+                            <div data-aos="fade-up" class="need__item-item">
+                                <img src="./assets/img/computer/need-2.jpg.png" alt="" class="need__item-item-img">
+                                <div class="need__item-item-content">
+                                    <h3 class="need__item-item-heading">Augmented Reality</h3>
+                                    <p class="need__item-item-text">It is a discipline that focuses on the interaction between data science and human language</p>
+                                </div>
+                            </div>
+                            <div data-aos="fade-up" class="need__item-item">
+                                <img src="./assets/img/computer/need-3.jpg.png" alt="" class="need__item-item-img">
+                                <div class="need__item-item-content">
+                                    <h3 class="need__item-item-heading">Document scanning</h3>
+                                    <p class="need__item-item-text">The software products that use computer vision as the component are used in various industries</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" class="col need__item">
+                        <img src="./assets/img/computer/orther-7.jpg" alt="" class="need__item-img-2">
+                        <img src="./assets/img/computer/img-h2o.svg" alt="" class="need__item-img-1">
+                        <!-- <img src="./assets/img/computer/img-h2o.svg" alt="" class="need__item-img"> -->
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="number">
+            <div class="container">
+                <div class="row number__list">
+                    <div class="col number__item">
+                        <p id="transaction-count" class="number__item-num">250</p>
+                        <p class="number__item-text">Successful projects</p>
+                    </div>
+                    <div class="col number__item">
+                        <div class="number__item-number">
+                            <p id="city-count" class="number__item-num">400</p>
+                            <p class="number__item-current">+</p>
+                    </div>
+                        <p class="number__item-text">Happy Customers</p>
+                    </div>
+                    <div class="col number__item">
+                        <div class="number__item-number">
+                            <p id="customer-count" class="number__item-num">120</p>
+                            <p class="number__item-current">+</p>
+                    </div>
+                        <p class="number__item-text">Professional Experts</p>
+                    </div>
+                    <div class="col number__item">
+                        <div class="number__item-number">
+                            <p id="business-count" class="number__item-num">100</p>
+                            <p class="number__item-current">%</p>
+                    </div>
+                        <p class="number__item-text">Customer Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <h1 data-aos="fade-right" class="team__heading">
+                    Leadership team
+                </h1>
+                <p data-aos="fade-left" class="team__text">
+                    We work with the Owners and Directors of hundreds of training providers, helping them grow and where <br> appropriate sell their training businesses.
+                </p>
+                <div data-aos="fade-up" class="team__list row">
+                    <div class="col team__item">
+                        <div class="team__item-img">
+                            <img src="./assets/img/computer/team-1.jpg" alt="" class="team__item-img-icon">
+                        </div>
+                        <i class="fa-solid fa-plus team__item-icon"></i>
+                        <h3 class="team__item-heading">Jane Christ</h3>
+                        <p class="team__item-text">Founder</p>
+                    </div>
+                    <div class="col team__item">
+                        <div class="team__item-img">
+                            <img src="./assets/img/computer/team-2.jpg" alt="" class="team__item-img-icon">
+                        </div>
+                        <i class="fa-solid fa-plus team__item-icon"></i>
+                        <h3 class="team__item-heading">Jacob Tyler</h3>
+                        <p class="team__item-text">CEO - Founder</p>
+                    </div>
+                    <div class="col team__item">
+                        <div class="team__item-img">
+                            <img src="./assets/img/computer/team-3.jpg" alt="" class="team__item-img-icon">
+                        </div>
+                        <i class="fa-solid fa-plus team__item-icon"></i>
+                        <h3 class="team__item-heading">Sarah Taylor</h3>
+                        <p class="team__item-text">Founder</p>
+                    </div>
+                    <div class="col team__item">
+                        <div class="team__item-img">
+                            <img src="./assets/img/computer/team-4.jpg" alt="" class="team__item-img-icon">
+                        </div>
+                        <i class="fa-solid fa-plus team__item-icon"></i>
+                        <h3 class="team__item-heading">Jacob Miler</h3>
+                        <p class="team__item-text">Product Manager</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our">
+            <div class="container">
+                <h1 class="our__heading">
+                    Our fields of expertise
+                </h1>
+                <p class="our__text">
+                    We enjoy adapting our strategies to offer every client the best solutions that are at the <br> forefront of the industry.
+                </p>
+                <div class="row our__list">
+                    <a href="#" class="col our__item">SEO</a>
+                    <a href="#" class="col our__item">Social Media </a>
+                    <a href="#" class="col our__item">Research </a>
+                    <a href="#" class="col our__item">Pharma </a>
+                    <a href="#" class="col our__item">Robotic  </a>
+                </div>
+                <div class=" row our__list-2">
+                    <div class="col our__item-2">
+                        <img src="./assets/img/computer/our-1.jpg" alt="" class="our__item-2-img">
+                    </div>
+                    <div class=" col our__item-2">
+                        <h3 class="our__item-2-heading">
+                            Serving businesses AI
+                        </h3>
+                        <p class="our__item-2-text">
+                            Whatever your business nature, ordinary or difficult,we will be happy to serve you. Tell us your business plan and get assistance from our experts in AI services.
+                        </p>
+                        <ul class="our__item-2-list">
+                            <li class="our__item-2-item">
+                                <i class="fa-solid fa-circle our__item-2-icon"></i>
+                                Improving Business Analytics
+                            </li>
+                            <li class="our__item-2-item">
+                                <i class="fa-solid fa-circle our__item-2-icon"></i>
+                                Customized AI solutions
+                            </li>
+                            <li class="our__item-2-item">
+                                <i class="fa-solid fa-circle our__item-2-icon"></i>
+                                Best in class solutions
+                            </li>
+                        </ul>
+                        <div class=" team__item-btn">
+                            Schedule a call
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="post">
+            <div class="container">
+                <div class="post__header">
+                    <h1 class="post__heading">Latest post. Don’t miss it.</h1>
+                    <div class="post__item-end mt-3 ">
+                        <a data-aos="fade-left" href="" class="post__item-end--link"> View more articles </a>
+                        <i class="fa-solid fa-angle-right post__item-end-icon"></i>
+                    </div>
+                </div>
+                <ul class="post__list row">
+                    <li class="post__item col">
+                        <div class="post__item-img">
+                            <img src="./assets/img/computer/post-1.jpg" alt="" class="post__item-imgg">
+                        </div>
+                        <div class="post__item-btn">
+                            <div class="btn__slider-2"></div>
+                            <a href="#" class=" post__item-btn-link">Natural Language Processing</a><br>
+                        </div>
+                        <a href="#" class="post__item--heading">
+                            <h1>Deep Learning Chatbot – analysis and implementation</h1>
+                        </a>
+                        <div class="post__item-text">
+                            <p>This Machine Learning Glossary aims to briefly introduce the most important Machine Learning terms - both for the commercially and...</p>
+                        </div>
+                        <a href="#" class="post__item-link">Read more</a>
+                    </li>
+                    <li class="post__item col">
+                        <div class="post__item-img">
+                            <img src="./assets/img/computer/post-2.jpg" alt="" class="post__item-imgg">
+                        </div>
+                        <div class="post__item-btn">
+                            <div class="btn__slider-2"></div>
+                            <a href="#" class=" post__item-btn-link">Technology</a><br>
+                        </div>
+                        <a href="#" class="post__item--heading">
+                            <h1>How Artificial Intelligence is changing the industry</h1>
+                        </a>
+                        <div class="post__item-text">
+                            <p>This Machine Learning Glossary aims to briefly introduce the most important Machine Learning terms - both for the commercially and...</p>
+                        </div>
+                        <a href="#" class="post__item-link">Read more</a>
+                    </li>
+                    <li class="post__item col">
+                        <div class="post__item-img">
+                            <img src="./assets/img/computer/post-3.jpg" alt="" class="post__item-imgg">
+                        </div>
+                        <div class="post__item-btn">
+                            <div class="btn__slider-2"></div>
+                            <a href="#" class=" post__item-btn-link">Technology</a><br>
+                        </div>
+                        <a href="#" class="post__item--heading">
+                            <h1>Machine Learning Terms every manager should know</h1>
+                        </a>
+                        <div class="post__item-text">
+                            <p>This Machine Learning Glossary aims to briefly introduce the most important Machine Learning terms - both for the commercially and...</p>
+                        </div>
+                        <a href="#" class="post__item-link">Read more</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <h1 class="news__heading">
+                    Subscribe to newsletter & <br> get company news.
+                </h1>
+                <div class="news__in">
+                    <input type="email" placeholder="Enter your email address" class="news__input">
+                    <div class=" news__item-btn">
+                        Sign Up Free
+                    </div>
+                    <img src="./assets/img/computer/news-1.png" alt="" class="news__img-1">
+                    <img src="./assets/img/computer/tron-1.svg" alt="" class="news__img-2">
+                    <img src="./assets/img/computer/tron-mini.svg" alt="" class="news__img-3">
+                    <img src="./assets/img/computer/x-1.svg" alt="" class="news__img-4">
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>WIS<span>.</span></h3>
+                        <p>
+                            A108 Adam Street <br> New York, NY 535022<br> United States <br><br>
+                            <strong>Phone:</strong> +1 5589 55488 55<br>
+                            <strong>Email:</strong> info@example.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Social Networks</h4>
+                        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-4">
+            <div class="copyright">
+                &copy; Copyright <strong><span>WIS</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
+                Designed by <a href="https://bootstrapmade.com/">WIS</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="./assets/js/computer.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
