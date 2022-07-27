@@ -1,0 +1,154 @@
+
+/* PC  */
+@media (min-width: 64em) {}
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {
+    .text-title {
+        font-size: 3rem;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .intro__text {}
+
+    .intro__image {
+        top: 80px;
+    }
+
+    .intro__image-item-1 {
+        top: -30px;
+        width: 30%;
+    }
+
+    .intro__image-item-3 {
+        right: 190px;
+        width: 30%;
+    }
+
+    .intro__image-item-2 {
+        width: 40%;
+    }
+
+
+    .intro__image-item-4 {
+        right: -50px;
+        width: 30%;
+    }
+
+    .intro__text {
+        max-width: 60%;
+    }
+
+    .intro__text-btn-down-link,
+    .intro__text-btn-how-link {
+        padding: 11px 38px;
+    }
+
+    .app__image-flower img,
+    .app__image-circle img {
+        width: 70%;
+    }
+
+    .app__image-flower {
+        left: 10%;
+    }
+
+    .app__image-circle {
+        top: -10%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .intro {
+        padding-bottom: 500px;
+    }
+
+    .intro__text-btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-wrap {
+        display: block;
+    }
+
+    .intro__image {
+        position: relative;
+        top: 80px;
+        right: 20%;
+    }
+
+    .intro__image-item-4 {
+        right: -30%;
+    }
+
+    .donors,
+    .handle,
+    .feature {
+        text-align: center;
+    }
+
+    .feature__item {
+        display: block;
+    }
+
+    .feature__item-img{
+        margin-bottom: 20px;
+    }
+
+    .feature__item-img svg {
+        top: 0;
+        /* right: 50%; */
+    }
+
+    .feature__item-img {
+        position: relative;
+    }
+
+
+    .feature__item-img img {}
+
+    .feature__item-img-svg {
+        position: absolute;
+        display: inline-block;
+        top: 5px;
+        left: 44%;
+    }
+
+    .app__image-flower img {
+        width: 50%;
+    }
+
+    .app__image-circle img {
+        width: 40%;
+    }
+
+    .app__image-flower {
+        left: -70px;
+        top: 20px;
+    }
+
+    .app__image-circle {
+        top: 60%;
+    }
+
+    .app__btn {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .sub__form{
+        margin-bottom: 100px;
+    }
+
+    .sub__btn {
+        width: 100%;
+        top: 130%;
+        right: -5px;
+    }
+
+}

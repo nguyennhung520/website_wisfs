@@ -1,0 +1,29 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * garamond-premier-pro-display:
+ *   - http://typekit.com/eulas/00000000000000003b9ade3b
+ *   - http://typekit.com/eulas/00000000000000003b9ade39
+ *
+ * © 2009-2022 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2019-01-02 03:57:53 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=mcq6uph&ht=tk&f=6821.6829&a=1591434&app=typekit&e=css");
+
+@font-face {
+font-family:"garamond-premier-pro-display";
+src:url("https://use.typekit.net/af/6abdec/00000000000000003b9ade3b/27/l?primer=90d4bffd060bb15fb2c0a083b43563d9b9d8d681298f23b8aae7bfe5950b0e83&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/6abdec/00000000000000003b9ade3b/27/d?primer=90d4bffd060bb15fb2c0a083b43563d9b9d8d681298f23b8aae7bfe5950b0e83&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/6abdec/00000000000000003b9ade3b/27/a?primer=90d4bffd060bb15fb2c0a083b43563d9b9d8d681298f23b8aae7bfe5950b0e83&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"garamond-premier-pro-display";
+src:url("https://use.typekit.net/af/6f119d/00000000000000003b9ade39/27/l?primer=90d4bffd060bb15fb2c0a083b43563d9b9d8d681298f23b8aae7bfe5950b0e83&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/6f119d/00000000000000003b9ade39/27/d?primer=90d4bffd060bb15fb2c0a083b43563d9b9d8d681298f23b8aae7bfe5950b0e83&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/6f119d/00000000000000003b9ade39/27/a?primer=90d4bffd060bb15fb2c0a083b43563d9b9d8d681298f23b8aae7bfe5950b0e83&fvd=n6&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;
+}
+
+.tk-garamond-premier-pro-display { font-family: "garamond-premier-pro-display",serif; }
