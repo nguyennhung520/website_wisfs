@@ -4,6 +4,12 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+/**
+* Template Name: HeroBiz - v2.1.0
+* Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 (function() {
   "use strict";
 
@@ -281,3 +287,30 @@
   });
 
 })()
+
+/* Demo purposes only */
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+
+
+jQuery(function ($) {
+  // Google Maps setup
+  var googlemap = new google.maps.Map(
+      document.getElementById('googlemap'),
+      {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+  );
+});
