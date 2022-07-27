@@ -42,6 +42,13 @@ body {
     transform: translateY(-5px);
 }
 
+.container-wis{
+    width: 90%;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 @keyframes upDown {
     0% {
         transform: translateY(0);
@@ -74,15 +81,20 @@ body {
 .intro {
     padding: 0;
     position: relative;
-}
-
-.intro-bg {
-    position: relative;
     background-image: url(../img/data-sciences/shapehome4t.svg);
     background-repeat: no-repeat;
     background-position: top -60px center;
     /* height: 1000px; */
-    padding: 190px 0 120px 100px
+    padding: 190px 0 100px;
+}
+
+.intro-bg {
+    position: absolute;
+    max-width: 100%;
+    width: 600px;
+    top: 100px;
+    right: 0;
+    z-index: -1;
 }
 
 
@@ -90,23 +102,26 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+    width: 100%;
 
 }
 
 .intro-bg__computer img {
     width: 90%;
-    margin-top: 50px;
 }
 
 .intro-bg__dot {
     position: absolute;
-    top: 156px;
-    right: 270px;
+    top: 0;
+    right: 170px;
     animation: upDown linear 4s infinite;
 }
 
 
-.intro__content {}
+.intro__content {
+    width: 580px;
+    max-width: 100%;
+}
 
 .intro__title {
     font-size: 4.8rem;
@@ -164,7 +179,7 @@ body {
     background-image: url(../img/data-sciences/img7-home5.png);
     background-repeat: no-repeat;
     background-position: top -30px right -350px;
-    padding: 50px 100px 80px;
+    padding: 50px 0 80px;
 }
 
 .service__logo {
@@ -251,10 +266,7 @@ body {
 /* End Service */
 
 /* Mission */
-.mission-wrap {
-    padding: 0 110px;
 
-}
 
 .mission-text {
     padding-left: 50px;
@@ -262,7 +274,13 @@ body {
 
 .mission__img {
     animation: move linear 5s infinite;
+    max-width: 600px;
+    margin: 0 auto;
 
+}
+
+.mission__img img{
+    width: 100%;
 }
 
 .mission__title {
@@ -290,8 +308,10 @@ body {
 
 
 .mission__statis {
-    padding: 100px 0;
+    padding: 75px 0 15px;
 }
+
+
 
 .mission__statis-data {
     color: #0091ff;
@@ -317,6 +337,8 @@ body {
 }
 
 /* End Mission */
+
+
 
 /* Expertise */
 .expertise__head {
@@ -417,6 +439,10 @@ body {
     padding: 0 15px;
 }
 
+.expertise__science-item-img{
+    text-align: center;
+}
+
 .expertise__science-item-heading {
     color: var(--color-text);
     font-size: 2rem;
@@ -475,7 +501,7 @@ body {
 }
 
 .user__wrap {
-    padding: 72px 15px;
+    padding: 72px 0;
 }
 
 .user__wrap-title {
@@ -517,7 +543,9 @@ body {
     align-items: center;
 }
 
-.user__wrap-logo-item {}
+.user__wrap-logo-item {
+    padding: 30px;
+}
 
 
 /* End User */
@@ -543,6 +571,7 @@ body {
 
 .modern__text-check-item {
     padding: 10px 15px;
+    display: flex;
 
 }
 
@@ -561,11 +590,15 @@ body {
 
 .modern__text-btn-link {
     margin-top: 25px;
+    display: inline-block;
 }
 
 .modern__text-check-img{
+    width: 100%;
+    display: block;
     text-align: center;
     animation: move linear 5s infinite;
+    margin-top: 20px;
 }
 
 /* End Modern */
@@ -615,6 +648,11 @@ body {
     position: absolute;
     top: 20px;
     right: -135px;
+    z-index: -1;
+
+}
+
+.work__item-arow img{
 }
 
 .work__item-heading{
@@ -627,11 +665,16 @@ body {
 .work__item-desc{
     font-size: 1.5rem;
     color: #57647c;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
 }
 /* End Work */
 
 
 /* Reason */
+
+
 .reason__heading{
     font-size: 4rem;    
     color: var(--color-text);
@@ -647,11 +690,12 @@ body {
 }
 
 .reason__list{
-    padding: 30px 15px 100px;
+    padding: 30px 15px;
 }
 
 .reason__item{
     padding: 0 10px;
+    margin: 10px 0;
 }
 
 .reason__item-ordinal{
@@ -704,12 +748,20 @@ body {
     margin-bottom: 36px;
 }
 
+.form-group{
+    display: flex;
+}
+
+
 .sign-up__form{
-    padding: 0 90px;
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
 }
 
 .sign-up__form-item{
     padding: 5px !important;
+
 }
 
 .sign-up__form-input{
@@ -724,11 +776,12 @@ body {
 .sign-up__form-btn{
     background-color: transparent;
     border: #fff 2px solid;
-    padding: 14px 57px;
+    padding: 14px 0;
     color: #fff;
     font-weight: 600;
     border-radius: 30px;
     transition: all linear 0.3s;
+    width: 100%;
 }
 
 .sign-up__form-btn:hover{
