@@ -52,10 +52,11 @@ a:hover {
 
 
 
-.wis-container {
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
+.container-wis{
+    width: 85%;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .clear {
@@ -69,10 +70,7 @@ a:hover {
 /* =====Intro===== */
 
 .intro {
-    /* max-width: 1200px;
-    width: 100%;
-    margin: auto; */
-    padding: 200px 0;
+    padding: 75px 0;
 }
 
 
@@ -89,7 +87,7 @@ a:hover {
 }
 
 .intro-gener__btn {
-    margin-top: 60px;
+    margin: 60px 0;
     font-size: 1.7rem;
 }
 
@@ -134,13 +132,12 @@ a:hover {
 }
 
 .intro-func__imi {
-
     display: block;
-    width: 100%;
+    min-width: 240px;
+    
     height: 50px;
     background-color: #0b7d6c;
     background-color: var(--color-text);
-    margin-top: 14px;
 
 }
 
@@ -150,10 +147,12 @@ a:hover {
     color: var(--color-text);
     font-size: 1.8rem;
     align-items: center;
-    padding: 0 45px;
-    margin-right: 22px;
-    line-height: 5.5rem;
-
+    min-width: 240px;
+    height: 55px;
+    justify-content: center;
+    padding: 0 20px;
+    margin-bottom: 14px;
+    font-weight: 600;
 }
 
 .intro-func__btn-audio:hover {
@@ -163,18 +162,19 @@ a:hover {
 
 .intro-func__btn-upload {
     display: flex;
-    padding: 0 27px;
     background-color: #e7e8f1;
     align-items: center;
+    min-width: 240px;
+    height: 55px;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 14px;
 
 }
 
 .intro-func__btn-upload-text {
-    margin: auto;
     color: #777;
     font-size: 1.6rem;
-    padding-right: 50px;
-
 }
 
 .intro-func__btn-upload-icon {
@@ -218,9 +218,6 @@ a:hover {
 
 .desc-guide {
     width: 42%;
-    /* background: linear-gradient(to right, #188978 0%, #93ebde 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
 
     color: #a9e3da;
 }
@@ -229,11 +226,6 @@ a:hover {
     color: #fff;
 }
 
-/* 
-.desc-guide__link:hover a {
-    color: var(--color-text);
-
-} */
 
 
 .desc-guide__link:hover .desc-guide__link-icon {
@@ -250,6 +242,7 @@ a:hover {
     margin-top: 25px;
     font-size: 1.8rem;
     font-weight: 600;
+    color: #101e76;
 }
 
 
@@ -287,7 +280,7 @@ a:hover {
 
 /* =====Explain====== */
 .explain {
-    padding-top: 150px;
+    padding-top: 120px;
 }
 
 .explain__title {
