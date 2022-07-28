@@ -1,0 +1,54 @@
+/* PC  */
+@media (min-width: 64em) {}
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {}
+
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .intro__text-title {
+        font-size: 4rem;
+    }
+
+    .intro__text {
+        padding: 80px 0 180px;
+    }
+
+    .intro__content {
+        margin-top: -150px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .intro__text-conver {
+        font-size: 1.3rem;
+    }
+
+    .intro__text-title {
+        font-size: 3rem;
+    }
+
+    .intro__text {
+        padding: 50px 0 120px;
+    }
+
+    .intro__content {
+        margin-top: -110px;
+    }
+
+    .container {
+        padding-left: 35px !important;
+        padding-right: 35px !important;
+    }
+
+    .intro__content-link {
+        display: flex;
+        flex-direction: column-reverse;  
+    }
+
+    .intro__content-link-hastag{
+        margin-bottom: 20px;
+    }
+}

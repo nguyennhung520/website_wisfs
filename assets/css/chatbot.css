@@ -75,6 +75,12 @@ body {
     margin-top: -270px;
 }
 
+.intro__content-img{
+}
+
+.intro__content-img img{
+    width: 100%;
+}
 
 .intro__content-main-feature {
     color: 1.6rem;
@@ -139,7 +145,7 @@ body {
 .intro__content-link {
     display: flex;
     justify-content: space-between;
-margin-top: 20px;    
+    margin-top: 20px;    
 }
 
 
@@ -208,6 +214,7 @@ margin-top: 20px;
 .blog__item{
     position: relative;
     overflow: hidden;
+    margin: 10px 0;
 
 }
 
@@ -216,6 +223,11 @@ margin-top: 20px;
     filter: brightness(50%);
     transition: all ease 0.6s;
     display: block;
+
+}
+
+.blog__title{
+    margin-bottom: 20px;
 }
 
 
