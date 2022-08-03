@@ -1,0 +1,67 @@
+/* PC  */
+@media (min-width: 64em) {}
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em){
+    .intro-func__btn {
+        flex-direction: column;
+    }
+
+    .intro-gener__heading{
+        font-size: 4rem;
+    }
+
+    .intro-gener__btn-get,
+    .intro-gener__btn-request{
+        font-size: 1.2rem;
+    }
+
+    .desc{
+        padding: 75px 0;
+    }
+
+    .explain {
+        padding-top: 75px;
+    }
+
+    .experience-section__title{
+        font-size: 3.8rem;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .desc-guide{
+        width: 50%;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .desc-guide{
+        width: 100%;
+    }
+
+    .desc-guide__video {
+        position: relative;
+        margin-top: 55px;
+        width: 100%;
+        float: right;
+    }
+
+    .explain-list{
+        padding: 20px 0;
+    }
+}
+
+
+/* Fix */
+@media (min-width: 64em) and (max-width: 87em) {
+    .intro-func__btn {
+        flex-direction: column;
+    }
+}
+
+

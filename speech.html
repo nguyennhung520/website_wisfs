@@ -19,7 +19,7 @@
         rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/699d94e4c8.js" crossorigin="anonymous"></script>
-                
+
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -35,6 +35,7 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/speech.css">
+    <link rel="stylesheet" href="./assets/css/speech-responsive.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
@@ -120,10 +121,10 @@
 
     <!-- ====== Main ====== -->
 
-    <section class="main">
+    <main class="main">
         <!-- Intro -->
         <section class="intro">
-            <div class="wis-container">
+            <div class="container-wis">
                 <div class="row">
                     <div class="col-md-6 intro-gener">
                         <div class="intro-gener-fix">
@@ -139,13 +140,16 @@
                     <div class="col-md-6">
                         <div class="intro-func">
                             <div class="intro-func__btn">
-                                <a href="#" class="intro-func__btn-audio btn-linear">RECORD AUDIO
-                                </a>
-                                <a href="" class="intro-func__btn-upload">
-                                    <p href="#" class="intro-func__btn-upload-text">Upload file audio</p>
-                                    <i class="fa-solid fa-up-long intro-func__btn-upload-icon"></i>
-                                </a>
-
+                                <div class="">
+                                    <a href="#" class="intro-func__btn-audio btn-linear">RECORD AUDIO
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="" class="intro-func__btn-upload">
+                                        <p href="#" class="intro-func__btn-upload-text">Upload file audio</p>
+                                        <i class="fa-solid fa-up-long intro-func__btn-upload-icon"></i>
+                                    </a>
+                                </div>
 
 
                             </div>
@@ -167,7 +171,7 @@
 
         <!-- Description -->
         <section class="desc">
-            <div class="wis-container">
+            <div class="container-wis">
                 <div class="desc-guide">
                     <div class="desc-guide__text">
                         Powered by deep learning and the speech recognition technology, FPT.AI Speech to Text (STT)
@@ -191,17 +195,23 @@
             </div>
 
         </section>
-    </section>
+    </main>
     <!-- End Description -->
 
 
     <!-- Explain -->
     <section class="explain">
-        <div class="wis-container">
+        <div class="container-wis">
             <h3 class="explain__title">Why FPT.AI Speech To Text</h3>
             <div class="explain-list">
-                <div class="row">
-                    <div class="col-md-4 explain-item">
+                <div class="row row-reverse">
+                    
+                    <div class="col-md-6 col-lg-7 col-xl-8 explain-item">
+                        <div class="explain-item__bg explain-item__bg-1">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-5 col-xl-4 explain-item">
                         <h3 class="explain-item__heading text-linear">Automatic language recognition</h3>
                         <p class="explain-item__desc">Using the latest advanced neural network algorithms, FPT.AI STT
                             delivers
@@ -212,16 +222,18 @@
                                     class="fa-solid fa-angle-right explain-item__link-icon"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-8 explain-item">
-                        <div class="explain-item__bg explain-item__bg-1">
-                        </div>
-                    </div>
                 </div>
             </div>
 
             <div class="explain-list">
-                <div class="row row-reverse">
-                    <div class="col-md-4 explain-item">
+                <div class="row">
+                    
+                    <div class="col-md-6 col-lg-7 col-xl-8  explain-item">
+                        <div class="explain-item__bg explain-item__bg-2">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-5 col-xl-4 explain-item">
                         <h3 class="explain-item__heading text-linear">Automatic proper nouns transcription and
                             punctuation</h3>
                         <p class="explain-item__desc">STT formats specific contextual results and can correctly
@@ -233,16 +245,17 @@
                                     class="fa-solid fa-angle-right explain-item__link-icon"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-8 explain-item">
-                        <div class="explain-item__bg explain-item__bg-2">
-                        </div>
-                    </div>
                 </div>
             </div>
 
             <div class="explain-list">
-                <div class="row  ">
-                    <div class="col-md-4  explain-item">
+                <div class="row row-reverse ">
+                    
+                    <div class="col-md-6 col-lg-7 col-xl-8 explain-item">
+                        <div class="explain-item__bg explain-item__bg-3">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5 col-xl-4 explain-item">
                         <h3 class="explain-item__heading text-linear">Real-time or pre-recorded audio support</h3>
                         <p class="explain-item__desc">Audio input can be received directly from the microphone of the
                             online application or sent from an audio file.</p>
@@ -251,26 +264,24 @@
                                     class="fa-solid fa-angle-right explain-item__link-icon"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-8 explain-item">
-                        <div class="explain-item__bg explain-item__bg-3">
-                        </div>
-                    </div>
                 </div>
             </div>
 
             <div class="explain-list">
-                <div class="row row-reverse">
-                    <div class="col-md-4  explain-item">
+                <div class="row">
+                    
+                    <div class="col-md-6 col-lg-7 col-xl-8 explain-item">
+                        <div class="explain-item__bg explain-item__bg-4">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-5 col-xl-4 explain-item">
                         <h3 class="explain-item__heading text-linear">Customization for enterprises</h3>
                         <p class="explain-item__desc">In addition to the multi-purpose voice recognition service, FPT.AI
                             TTS provides a service channel that customize to enterprises needs.</p>
                         <div class="explain-item__link">
                             <a href="#" class="explain-item__link-text">Get started <i
                                     class="fa-solid fa-angle-right explain-item__link-icon"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-8 explain-item">
-                        <div class="explain-item__bg explain-item__bg-4">
                         </div>
                     </div>
                 </div>
@@ -282,7 +293,7 @@
 
     <!-- Purchase -->
     <section class="purchase">
-        <div class="wis-container">
+        <div class="container-wis">
             <h3 class="purchase__title">Choose Your Package</h3>
             <div class="row purchase-list">
                 <div class="col-md-4 purchase-item">
@@ -352,7 +363,7 @@
 
         <div class="experience__overlay"></div>
         <div class="experience__content">
-            <div class="wis-container">
+            <div class="container-wis">
                 <div class="experience-section">
                     <div class="col-md-7">
                         <div class="experience-section__title">
