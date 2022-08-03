@@ -1,0 +1,57 @@
+/* PC  */
+@media (min-width: 64em) {}
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em){
+
+}
+
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .reason{
+        
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .intro-bg{
+        background-position: center;
+    }
+
+    .intro-content__heading{
+        font-size: 3.4rem;
+    }
+
+    .active__page-desc{
+        padding: 20px 0 0 ;
+    }
+
+    .contact__form-item-half{
+        width: 100%;
+    }
+
+    .contact__form-item--margin{
+        margin-bottom: 16px;
+    }
+
+    .contact__btn{
+        width: 100%;
+    }
+}
+
+/* Fix */
+@media  (max-width: 48em) {
+    .support__items-desc-func{
+        min-height: unset;
+    }
+
+    .reason{
+        background: none;
+        height: 1100px;
+        padding: 0;
+    }
+    
+}

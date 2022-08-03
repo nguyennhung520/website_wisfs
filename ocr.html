@@ -34,6 +34,7 @@
 
     <!-- Template Main CSS File -->
     <link rel="stylesheet" href="./assets/css/ocr.css">
+    <link rel="stylesheet" href="./assets/css/ocr-responsive.css">
     <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -120,24 +121,26 @@
     <section class="main">
         <!-- Intro -->
         <section class="intro">
-            <div class="intro-bg"></div>
-            <div class="wis-container">
-                <div class="intro-content">
-                    <div class="col-md-6">
-                        <h3 class="intro-content__heading">
-                            Nhận diện ký tự - CVS VISION OCR
-                        </h3>
-                        <div class="intro-content__heading-desc">
-                            <p class="intro-content__heading-desc-text">Tăng tốc quá trình xử lý tài liệu bằng các sản
-                                phẩm
-                                nhận diện ký tự dựa trên kỹ thuật Deep Learning tiên tiến nhất hiện nay</p>
-                        </div>
-                        <div class="intro-content__btn">
-                            <div class="intro-content__btn-trial">
-                                <a href="#" class="intro-content__btn-trial-link">Dùng thử</a>
+            <div class="intro-bg">
+                <div class="container-wis">
+                    <div class="intro-content">
+                        <div class="col-md-6">
+                            <h3 class="intro-content__heading">
+                                Nhận diện ký tự - CVS VISION OCR
+                            </h3>
+                            <div class="intro-content__heading-desc">
+                                <p class="intro-content__heading-desc-text">Tăng tốc quá trình xử lý tài liệu bằng các
+                                    sản
+                                    phẩm
+                                    nhận diện ký tự dựa trên kỹ thuật Deep Learning tiên tiến nhất hiện nay</p>
                             </div>
-                            <div class="intro-content__btn-contact">
-                                <a href="#" class="intro-content__btn-contact-link">Liên hệ</a>
+                            <div class="intro-content__btn">
+                                <div class="intro-content__btn-trial">
+                                    <a href="#" class="intro-content__btn-trial-link">Dùng thử</a>
+                                </div>
+                                <div class="intro-content__btn-contact">
+                                    <a href="#" class="intro-content__btn-contact-link">Liên hệ</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -149,7 +152,7 @@
 
         <!-- Active -->
         <section class="active">
-            <div class="wis-container">
+            <div class="container-wis">
                 <div class="active__page">
                     <h3 class="active__page-tittle">CVS VISION OCR hoạt động như thế nào?</h3>
                     <div class="active__page-img">
@@ -180,11 +183,11 @@
 
         <!-- Support -->
         <section class="page-support">
-            <div class="wis-container">
+            <div class="container-wis">
                 <div class="support">
-                    <div class="support__desc">
-                        <h3 class="support__desc-title">Hỗ trợ đa dạng tài liệu và đa dạng ngôn ngữ</h3>
-                        <p class="support__desc-text">
+                    <div class="support__desc row">
+                        <h3 class="support__desc-title col-md-4">Hỗ trợ đa dạng tài liệu và đa dạng ngôn ngữ</h3>
+                        <p class="support__desc-text col-md-8">
                             Công nghệ của chúng tôi có khả năng chuyển đổi tài liệu và sử dụng thông tin tài liệu theo
                             biểu
                             mẫu hoặc không có biểu mẫu đến từ nhiều nguồn khác nhau từ scan, PDF, hình ảnh của tài liệu,
@@ -399,10 +402,10 @@
 
 
         <!-- Reason -->
-        <section class="bg-reason">
-            <div class="wis-container">
-                <div class="reason">
-                    <div class="col-md-7">
+        <section class="reason">
+            <div class="container-wis">
+                <div class="reason-wrap">
+                    <div class="col-lg-7 col-md-9">
                         <div class="reason__title">Tại sao các khách hàng lựa chọn CVS VISION OCR?</div>
                         <div class="row reason__list">
                             <div class="col-md-6">
@@ -490,7 +493,7 @@
 
         <!-- Contact -->
         <section class="bg-contact">
-            <div class="wis-container">
+            <div class="container-wis">
                 <div class="contact">
                     <div class="contact__heading">Liên hệ ngay với chúng tôi</div>
                     <div class="contact__underline"></div>
@@ -499,7 +502,7 @@
                     <form class="contact__form">
                         <div class="form-group row contact__form-list">
                             <div class="contact__form-item-half">
-                                <input type="text" class=" contact__form-item" required placeholder="Họ và tên">
+                                <input type="text" class=" contact__form-item contact__form-item--margin" required placeholder="Họ và tên">
 
                             </div>
                             <div class="contact__form-item-half">
@@ -508,7 +511,7 @@
                         </div>
                         <div class="form-group row contact__form-list">
                             <div class="contact__form-item-half">
-                                <input type="email" class=" contact__form-item" required placeholder="Email">
+                                <input type="email" class=" contact__form-item contact__form-item--margin" required placeholder="Email">
 
                             </div>
                             <div class="contact__form-item-half">
@@ -518,9 +521,9 @@
                         </div>
                         <div class="form-group row contact__form-list contact__form-list-dropdown">
                             <div class="contact__form-item-full">
-                                <input id="dropdown" type="" class=" contact__form-item contact__form-item-full" required
-                                    placeholder="Chúng tôi có thể giúp đỡ gì cho bạn?" readonly>
-                                    <i class="fa-solid fa-angle-down contact__form-item-icon "></i>
+                                <input id="dropdown" type="" class=" contact__form-item contact__form-item-full"
+                                    required placeholder="Chúng tôi có thể giúp đỡ gì cho bạn?" readonly>
+                                <i class="fa-solid fa-angle-down contact__form-item-icon "></i>
                                 <ul class="contact__form-item-dropdown">
                                     <div class="mt-2 mb-2">
                                         <li class="contact__form-item-dropdown-select">Tôi muốn trao đổi về các sản phẩm
