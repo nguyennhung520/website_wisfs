@@ -18,10 +18,11 @@ a:hover{
 
 }
 
-.wis-container{
-    max-width: 1400px;
-    width: 100%;
-    margin: auto;
+.container-wis{
+    width: 90%;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .color-linear{
@@ -68,6 +69,7 @@ a:hover{
     font-size: 2.4rem;
     color: #1e1666;
     font-weight: 600;
+    max-width: 400px;
 }
 
 .main__handle{
@@ -125,6 +127,44 @@ a:hover{
 
 .main__btn-help-link:hover{
     color: #fff;
+}
+
+
+.sub__social{
+    display: flex;
+}
+
+.sub__social-item{
+    padding: 12px;
+    background-color: #c6ddfe;
+    border-radius: 50%;
+    margin: 80px 12px 0;
+    transition: all ease 0.2s;
+
+}
+
+.sub__social-item:hover,
+.sub__social-item:hover .sub__social-item-icon i{
+    text-decoration: none;
+    background-image: linear-gradient(to right,#36d1dc 0%,#5b86e5 51%,#36d1dc 100%);
+    background-size: 200%;
+    color: #fff;
+}
+
+.sub__social-item-icon{
+    display: flex;
+    color: #1e1666;
+    width: 14px;
+    height: 14px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sub__social-item-icon i{
+    font-size: 14px;
+    transition: all ease 0.2s;
+
 }
 
 

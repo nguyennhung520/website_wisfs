@@ -1,0 +1,35 @@
+/* PC  */
+@media (min-width: 64em) {}
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {}
+
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .main-bg{
+        background-size: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .main__btn {
+        flex-direction: column;
+        display: inline-flex;
+    }
+
+    .main__btn div{
+        margin: 10px 0;
+    }
+
+
+    .main-bg{
+        background-position: bottom left;
+        background-size: 170% auto;
+    }
+
+    .sub__social-item{
+        margin: 40px 8px 0;
+    }
+}
