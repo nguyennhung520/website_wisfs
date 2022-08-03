@@ -1,0 +1,145 @@
+/* PC  */
+@media (min-width: 64em) {}
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em){
+    .intro-animation-left,
+    .intro-animation-right,
+    .intro-content__graphics-ball{
+        display: none;
+    }
+    .intro-content{
+        padding: 0 20px 80px;
+    }
+
+    
+
+    .intro-content__text-desc{
+        font-size: 1.6rem;
+    }
+
+    .templates__options-border{
+        border: none;
+    }
+
+    .templates__options-list{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding:  0 20px;
+    }
+
+    .feature-wrap{
+        
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .intro-content__text-heading{
+        font-size: 2.4rem;
+    }
+    .intro-content__text-title{
+        font-size: 6rem;
+    }
+
+    .category__items {
+        /* margin:0 5px; */
+    
+    }
+    .feature__text--chat,
+    .feature__text--mobile{
+    margin-bottom: 70px;
+    }
+
+    .feature__graphics-bg1--chat {
+        left: -60px;
+    }
+
+    .feature__graphics-bg2--chat {
+        left: -50px;
+    }
+
+
+    .feature__graphics-bg1--mobile {
+        right: -80px;
+    }
+
+    .feature__graphics-bg2--mobile {
+        right: -80px;
+    }
+
+    .intro-content__text-title::before{
+        font-size: 100px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .intro-content__text-title::before{
+        font-size: 85px;
+    }
+
+    .intro-content__text-heading{
+        font-size: 2rem;
+    }
+    .intro-content__text-title{
+        font-size: 5.2rem;
+    }
+
+
+    .feature__text--chat,
+    .feature__text--mobile{
+    text-align: center;
+    padding: 0 !important;
+    margin-bottom: 70px;
+    }
+
+    .feature__graphics {
+        text-align: center;
+    }
+
+    .feature__graphics--chat::after,
+    .feature__graphics--mobile::after {
+        left: 0;
+        right: 0;
+        top: -60px;
+        width: 100%;
+    }
+    
+    .feature__graphics-bg1{
+        width: 70%;
+    }
+
+    .feature__graphics-bg2{
+        width: 80%;
+    }
+
+    .feature__graphics-bg1--chat {
+        left: 76px;
+    }
+
+    .feature__graphics-bg2--chat {
+        left: 50px;
+    }
+
+    .feature__graphics-bg1--mobile {
+        right: 82px;
+    }
+
+    .feature__graphics-bg2--mobile {
+        right: 55px;
+    }
+    
+    #feature-chat {
+        margin-bottom: 20px;
+    }
+}
+
+/* Fix  */
+
+@media (max-width: 62em) {
+.beehive-items{
+    text-align: center;
+}
+}

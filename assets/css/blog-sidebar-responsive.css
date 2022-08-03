@@ -1,0 +1,25 @@
+/* PC  */
+@media (min-width: 64em) {}
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {
+    /* .container-wis{
+        width: 80%;
+    } */
+}
+
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+
+    .container-wis {
+        width: 80%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .content__post-item {
+        margin-bottom: 10px;
+    }
+}

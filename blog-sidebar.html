@@ -37,6 +37,7 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/blog-sidebar.css">
+    <link rel="stylesheet" href="./assets/css/blog-sidebar-responsive.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
@@ -69,65 +70,65 @@
         </div>
     </section>
 
-   <!-- ======= Header ======= -->
-   <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
 
-        <h1 class="logo">
-            <a href="index.html"><img src="assets/img/bsg.png"></a>
-        </h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+            <h1 class="logo">
+                <a href="index.html"><img src="assets/img/bsg.png"></a>
+            </h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
 
-        <nav id="navbar" class="navbar">
-            <ul>
-                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                <li><a class="nav-link scrollto" href="#about">About</a></li>
-                <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-                <li><a class="nav-link scrollto" href="#team">Team</a></li>
-                <li class="dropdown"><a href="#product"><span>Product</span> <i class="bi bi-chevron-down"></i></a>
-                    <ul>
-                        <li><a href="product.html">Ekyc</a></li>
-                        <li><a href="speech.html">Speech to text</a></li>
-                        <li><a href="ocr.html">OCR</a></li>
-                        <li><a href="text.html">Text to speech</a></li>
-                        <li><a href="chatbot.html">Chat sell</a></li>
-                        <li><a href="mxh-app.html">Social network</a></li>
-                        <li><a href="callbot.html">Call bot</a></li>
-                        <li><a href="">Chat app</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href=""><span>Blog</span><i class="bi bi-chevron-down"></i></a>
-                    <ul>
-                        <li><a href="blog-sidebar.html">Blog sidebar</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href=""><span>Page</span><i class="bi bi-chevron-down"></i></a>
-                    <ul>
-                        <li><a href="page-404.html">Page 404</a></li>
-                        <li><a href="approach.html">Our approach</a></li>
-                    </ul>
-                </li>
-                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <!-- .navbar -->
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <li class="dropdown"><a href="#product"><span>Product</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="product.html">Ekyc</a></li>
+                            <li><a href="speech.html">Speech to text</a></li>
+                            <li><a href="ocr.html">OCR</a></li>
+                            <li><a href="text.html">Text to speech</a></li>
+                            <li><a href="chatbot.html">Chat sell</a></li>
+                            <li><a href="mxh-app.html">Social network</a></li>
+                            <li><a href="callbot.html">Call bot</a></li>
+                            <li><a href="">Chat app</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href=""><span>Blog</span><i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="blog-sidebar.html">Blog sidebar</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href=""><span>Page</span><i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="page-404.html">Page 404</a></li>
+                            <li><a href="approach.html">Our approach</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
 
-    </div>
-</header>
-<!-- End Header -->
+        </div>
+    </header>
+    <!-- End Header -->
 
 
     <!-- ====== Main ====== -->
 
-    <section class="main">
+    <main class="main">
         <!-- BANNER -->
         <section class="banner">
             <div class="banner-bg">
 
-                <div class="wis-container">
+                <div class="container-wis">
                     <div class="banner__title">Blog Sidebar</div>
                     <div class="banner__desc">
                         <div class="banner__desc-home">Home</div>
@@ -142,24 +143,26 @@
 
         <!-- Content -->
         <section class="content">
-            <div class="wis-container">
+            <div class="container-wis">
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-lg-8">
                         <div class="content__post">
-                            <div class="content__post-item">
-                                <div class="content__post-item-img">
+                            <div class="content__post-item row">
+                                <div class="content__post-item-img col-md-6">
                                     <a href="#" class="content__post-item-img-link">
-                                        <img src="./assets/img/blog-sidebar/blog1.jpg" alt="">
+                                        <img src="./assets/img/blog-sidebar/blog1.jpg"
+                                            class="content__post-item-img-link-img" alt="">
+                                        <div class="content__post-item-img-author">
+                                            <img src="./assets/img/blog-sidebar/avatar.png" alt=""
+                                                class="content__post-item-img-author-avt">
+                                            <div class="content__post-item-img-author-name">Natasa Lina</div>
+                                        </div>
                                     </a>
                                     <div class="content__post-item-bg"></div>
-                                    <div class="content__post-item-img-author">
-                                        <img src="./assets/img/blog-sidebar/avatar.png" alt=""
-                                            class="content__post-item-img-author-avt">
-                                        <div class="content__post-item-img-author-name">Natasa Lina</div>
-                                    </div>
+
                                 </div>
 
-                                <div class="content__post-item-text">
+                                <div class="content__post-item-text col-md-6">
                                     <div class="content__post-item-text-category color-linear">Technology</div>
                                     <div class="content__post-item-text-wrap">
                                         <a href="#" class="content__post-item-text-title">Machine Learning Terms every
@@ -171,23 +174,26 @@
                                         commercially and...</p>
                                 </div>
                             </div>
-                            <div class="content__post-item">
-                                <div class="content__post-item-img">
+                            <div class="content__post-item  row">
+                                <div class="content__post-item-img col-md-6">
                                     <a href="#" class="content__post-item-img-link">
-                                        <img src="./assets/img/blog-sidebar/blog2.jpg" alt="">
+                                        <img src="./assets/img/blog-sidebar/blog2.jpg"
+                                            class="content__post-item-img-link-img" alt="">
+                                        <div class="content__post-item-img-author">
+                                            <img src="./assets/img/blog-sidebar/avatar.png" alt=""
+                                                class="content__post-item-img-author-avt">
+                                            <div class="content__post-item-img-author-name">Natasa Lina</div>
+                                        </div>
                                     </a>
                                     <div class="content__post-item-bg"></div>
-                                    <div class="content__post-item-img-author">
-                                        <img src="./assets/img/blog-sidebar/avatar.png" alt=""
-                                            class="content__post-item-img-author-avt">
-                                        <div class="content__post-item-img-author-name">Natasa Lina</div>
-                                    </div>
+
                                 </div>
 
-                                <div class="content__post-item-text">
+                                <div class="content__post-item-text col-md-6">
                                     <div class="content__post-item-text-category color-linear">Technology</div>
                                     <div class="content__post-item-text-wrap">
-                                        <a href="#" class="content__post-item-text-title">How companies are making money by
+                                        <a href="#" class="content__post-item-text-title">How companies are making money
+                                            by
                                             recommend system</a>
 
                                     </div>
@@ -196,24 +202,27 @@
                                         and could make...</p>
                                 </div>
                             </div>
-                            <div class="content__post-item">
-                                <div class="content__post-item-img">
+                            <div class="content__post-item  row">
+                                <div class="content__post-item-img col-md-6">
                                     <a href="#" class="content__post-item-img-link">
-                                        <img src="./assets/img/blog-sidebar/blog3.jpeg" alt="">
+                                        <img src="./assets/img/blog-sidebar/blog3.jpeg"
+                                            class="content__post-item-img-link-img" alt="">
+                                        <div class="content__post-item-img-author">
+                                            <img src="./assets/img/blog-sidebar/avatar.png" alt=""
+                                                class="content__post-item-img-author-avt">
+                                            <div class="content__post-item-img-author-name">Natasa Lina</div>
+                                        </div>
                                     </a>
                                     <div class="content__post-item-bg"></div>
-                                    <div class="content__post-item-img-author">
-                                        <img src="./assets/img/blog-sidebar/avatar.png" alt=""
-                                            class="content__post-item-img-author-avt">
-                                        <div class="content__post-item-img-author-name">Natasa Lina</div>
-                                    </div>
+
                                 </div>
 
-                                <div class="content__post-item-text">
+                                <div class="content__post-item-text col-md-6">
                                     <div class="content__post-item-text-category color-linear">Natural Language
                                         Processing</div>
                                     <div class="content__post-item-text-wrap">
-                                        <a href="#" class="content__post-item-text-title">Deep Learning Chatbot – analysis
+                                        <a href="#" class="content__post-item-text-title">Deep Learning Chatbot –
+                                            analysis
                                             and implementation</a>
 
                                     </div>
@@ -222,23 +231,26 @@
                                         commercially and...</p>
                                 </div>
                             </div>
-                            <div class="content__post-item">
-                                <div class="content__post-item-img">
+                            <div class="content__post-item  row">
+                                <div class="content__post-item-img col-md-6">
                                     <a href="#" class="content__post-item-img-link">
-                                        <img src="./assets/img/blog-sidebar/blog4.jpg" alt="">
+                                        <img src="./assets/img/blog-sidebar/blog4.jpg"
+                                            class="content__post-item-img-link-img" alt="">
+                                        <div class="content__post-item-img-author">
+                                            <img src="./assets/img/blog-sidebar/avatar.png" alt=""
+                                                class="content__post-item-img-author-avt">
+                                            <div class="content__post-item-img-author-name">Natasa Lina</div>
+                                        </div>
                                     </a>
                                     <div class="content__post-item-bg"></div>
-                                    <div class="content__post-item-img-author">
-                                        <img src="./assets/img/blog-sidebar/avatar.png" alt=""
-                                            class="content__post-item-img-author-avt">
-                                        <div class="content__post-item-img-author-name">Natasa Lina</div>
-                                    </div>
+
                                 </div>
 
-                                <div class="content__post-item-text">
+                                <div class="content__post-item-text col-md-6">
                                     <div class="content__post-item-text-category color-linear">Technology</div>
                                     <div class="content__post-item-text-wrap">
-                                        <a href="#" class="content__post-item-text-title">AI simplified: What computers are
+                                        <a href="#" class="content__post-item-text-title">AI simplified: What computers
+                                            are
                                             good at</a>
 
                                     </div>
@@ -248,10 +260,11 @@
                                 </div>
                             </div>
 
-                            <div class="content__post-item">
-                                <div class="content__post-item-img">
+                            <div class="content__post-item  row">
+                                <div class="content__post-item-img col-md-6">
                                     <a href="#" class="content__post-item-img-link">
-                                        <img src="./assets/img/blog-sidebar/blog5.jpg" alt="">
+                                        <img src="./assets/img/blog-sidebar/blog5.jpg"
+                                            class="content__post-item-img-link-img" alt="">
                                     </a>
                                     <div class="content__post-item-img-author">
                                         <img src="./assets/img/blog-sidebar/avatar.png" alt=""
@@ -260,11 +273,12 @@
                                     </div>
                                 </div>
 
-                                <div class="content__post-item-text">
+                                <div class="content__post-item-text col-md-6">
                                     <div class="content__post-item-text-category color-linear">Business</div>
                                     <div class="content__post-item-text-wrap">
 
-                                        <a href="#" class="content__post-item-text-title">AI Simplified: Machine Learning
+                                        <a href="#" class="content__post-item-text-title">AI Simplified: Machine
+                                            Learning
                                             problem types</a>
                                     </div>
                                     <p class="content__post-item-text-desc">The unprecedented explosion in the amount of
@@ -274,37 +288,52 @@
                             </div>
 
                         </div>
+                        <div class="next-page">
+                            <div class="next-page__number next-page__number--active">1</div>
+                            <div class="next-page__number">2</div>
+                            <div class="next-page__btn">Next</div>
+                        </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <div class="category">
                             <div class="category__list">
                                 <div class="category__heading">Categories</div>
                                 <div class="category__item">
                                     <div class="category__item-icon"><i class="fa-solid fa-angle-right"></i></div>
-                                    <div class="category__item-text">Artificial Intelligence</div>
-                                    <span class="category__item-quantity"> (1)</span>
+                                    <div class="category__item-text">Artificial Intelligence
+
+                                        <span class="category__item-quantity"> (1)</span>
+                                    </div>
                                 </div>
                                 <div class="category__item">
                                     <div class="category__item-icon"><i class="fa-solid fa-angle-right"></i></div>
-                                    <div class="category__item-text">Business</div>
-                                    <span class="category__item-quantity"> (4)</span>
+                                    <div class="category__item-text">Business
+
+                                        <span class="category__item-quantity"> (4)</span>
+                                    </div>
                                 </div>
                                 <div class="category__item">
                                     <div class="category__item-icon"><i class="fa-solid fa-angle-right"></i></div>
-                                    <div class="category__item-text">Natural Language Processing</div>
-                                    <span class="category__item-quantity"> (1)</span>
+                                    <div class="category__item-text">Natural Language Processing
+
+                                        <span class="category__item-quantity"> (1)</span>
+                                    </div>
 
                                 </div>
                                 <div class="category__item">
                                     <div class="category__item-icon"><i class="fa-solid fa-angle-right"></i></div>
-                                    <div class="category__item-text">NLP</div>
-                                    <span class="category__item-quantity"> (1)</span>
+                                    <div class="category__item-text">NLP
+
+                                        <span class="category__item-quantity"> (1)</span>
+                                    </div>
 
                                 </div>
                                 <div class="category__item">
                                     <div class="category__item-icon"><i class="fa-solid fa-angle-right"></i></div>
-                                    <div class="category__item-text">Technology</div>
-                                    <span class="category__item-quantity"> (4)</span>
+                                    <div class="category__item-text">Technology
+
+                                        <span class="category__item-quantity"> (4)</span>
+                                    </div>
 
                                 </div>
                             </div>
@@ -341,15 +370,11 @@
 
 
 
-            <div class="next-page">
-                <div class="next-page__number next-page__number--active">1</div>
-                <div class="next-page__number">2</div>
-                <div class="next-page__btn">Next</div>
-            </div>
+
         </section>
         <!-- End Content -->
 
-    </section>
+    </main>
 
     <!-- ======End Main====== -->
 

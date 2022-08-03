@@ -135,7 +135,8 @@
     z-index: -1;
     right: -20%;
     bottom: -60%;
-    position: absolute; -moz-transform: scaleX(-1);
+    position: absolute;
+     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);

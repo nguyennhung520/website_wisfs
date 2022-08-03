@@ -33,10 +33,12 @@ a:hover {
 }
 
 
-.wis-container {
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
+
+.container-wis{
+    width: 90%;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .clear {
@@ -69,7 +71,8 @@ a:hover {
 
 .intro-bg {
     background: url(../img/ocr/banner.jpg) right 38% center no-repeat;
-    padding-top: 50%;
+    min-height: 500px;
+    overflow: visible;
 }
 
 .intro-content {
@@ -187,17 +190,17 @@ a:hover {
 
 .support__desc {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .support__desc-title {
     font-size: 2.8rem;
-    max-width: 350px;
+    max-width: 360px;
+    margin-bottom: 32px;
 }
 
 .support__desc-text {
-    max-width: 550px;
+    /* max-width: 550px; */
     font-size: 1.4rem;
 }
 
@@ -242,17 +245,18 @@ a:hover {
 
 
 /* Reason */
-.bg-reason {
+
+.reason {
     background: url(../img/ocr/reason.jpg) right / cover no-repeat;
-    padding-top: 50%;
     position: relative;
+    height: 800px;
+    background-position: 50%;
 }
 
 
-.reason {
+.reason-wrap {
     position: absolute;
-    top: 12%;
-    left: 10%;
+
 }
 
 .reason__title {

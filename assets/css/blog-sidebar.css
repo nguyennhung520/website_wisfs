@@ -14,10 +14,11 @@ body {
 }
 
 
-.wis-container{
-    max-width: 1330px;
-    width: 100%;
-    margin: auto;
+.container-wis{
+    width: 90%;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .color-linear{
@@ -116,7 +117,7 @@ cursor: pointer;
 
 }
 
-.content__post-item:hover .content__post-item-bg {
+.content__post-item:hover .content__post-item-img-link::after {
     /* display: flex; */
     opacity: 0.3;
     cursor: pointer;
@@ -127,15 +128,15 @@ cursor: pointer;
 .content__post-item-img{
     position: relative;
     width: 100%;
-    max-width: 400px;
 }
 
 .content__post-item-img-link{
     width: 100%;
     display: block;
+    position: relative;
 }
 
-.content__post-item-img-link img{
+.content__post-item-img-link-img{
     border-radius: 5px;
     display: block;
     width: 100%;
@@ -143,7 +144,21 @@ cursor: pointer;
 
 }
 
-.content__post-item-bg{
+/* .content__post-item-bg{
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 30px);
+    top: 0;
+    left: 15px;
+    
+    background-image: linear-gradient(transparent,#5f54c1 20%,#1e1666 51%);
+    opacity: 0;
+    transition: opacity ease-in-out 0.5s;
+} */
+
+.content__post-item-img-link::after{
+    display: block;
+    content: "";
     /* display: none; */
     position: absolute;
     height: 100%;
@@ -163,6 +178,7 @@ cursor: pointer;
     left: 16px;
     transition: opacity ease-in-out 0.5s;
     opacity: 0;
+    z-index: 2;
 }
 
 .content__post-item-img-author-avt{
@@ -177,7 +193,7 @@ cursor: pointer;
 
 .content__post-item-text{
     /* display: none; */
-    align-self: center;
+    /* align-self: center; */
     padding: 15px 15px 15px 45px;
 }
 
@@ -227,6 +243,12 @@ cursor: pointer;
     color: #57647c;
     font-size: 1.6rem;
     line-height: 2.5rem;
+    height: 7.5rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }
 
 
@@ -282,12 +304,12 @@ font-size: 1.6rem;
 
 .category__item-quantity{
     align-self: center;
-    margin-left: 5px;
+    /* margin-left: 5px; */
 }
 
 
 .tag{
-    margin-top: 38px;
+    margin: 38px 0;
 
 }
 
@@ -419,7 +441,7 @@ font-size: 2rem;
 
 
 .next-page{
-    justify-content: center;
+    justify-content: end;
     display: flex;
 }
 
