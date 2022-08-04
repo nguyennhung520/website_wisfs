@@ -5,16 +5,21 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>WIS</title>
+    <title>Wissfv</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/logo.png" rel="icon">
+    <link href="assets/img/logo/logo.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
@@ -27,17 +32,32 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+        integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/variables.css">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: BizLand - v3.7.0
@@ -70,24 +90,85 @@
     <header id="header" class="d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
 
-            <h1 class="logo">
-                <a href="index.html"><img src="/assets/img/logo/bsg.png"></a>
-            </h1>
+            <h1 class="logo"><a href="index.html">
+                    <img src="/assets/img/logo/bsg.png" alt="" class="">
+                </a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
-
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a>
+                    <li class="dropdown">
+                        <a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="drowdrop-two">
+                            <li>
+                                <div class="row nav-drowdrop">
+                                    <div class="col-md-3">
+                                        <p class="ml-3"><strong class="sub-menu-heading">STARTUP</strong></p>
+                                        <p><a href="data-sciences.html">Data Sciences</a></p>
+                                        <p><a href="chatbot.html">Chatbot</a></p>
+                                        <p><a href="mobile.html">Mobile</a></p>
+                                        <p><a href="computer.html">Computer vision</a></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p class="ml-3"><strong class="sub-menu-heading">AGENCY</strong></p>
+                                        <p><a href="data-sciences.html">Data Sciences</a></p>
+                                        <p><a href="#">Artificial Intelligence</a></p>
+                                        <p><a href="mobile.html">Mobile</a></p>
+                                        <p><a href="smart.html">Smart City</a></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p class="ml-3"><strong class="sub-menu-heading">AI IN INDUSTRIES</strong></p>
+                                        <p><a href="smart.html">Smart City</a></p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="/assets/img/about/team.gif" alt="flower" class="img-fluid">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </li>
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li class="dropdown">
+                        <a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="drowdrop-two">
+                            <li>
+                                <div class="row nav-drowdrop">
+                                    <div class="col-md-4">
+                                        <p class="ml-3"><strong class="sub-menu-heading">IDENTIFICATION</strong></p>
+                                        <p><a href="product.html">EKYC</a></p>
+                                        <p><a href="ocr.html">Optical Character Recognition</a></p>
+                                        <p><a href="speech.html">Speech to Text</a></p>
+                                        <p><a href="text.html">Text to Speech</a></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p class="ml-3"><strong class="sub-menu-heading">Social Network</strong></p>
+                                        <p><a href="mxh-app.html">Social Network App</a></p>
+                                        <p><a href="chatbot.html">Chatbot Sell</a></p>
+                                        <p><a href="callbot.html">Callbot</a></p>
+                                        <p><a href="">Chatt App</a></p>
+                                    </div>
+                                    <!-- <div class="col-md-3">
+                        <p class="ml-3"><strong class="sub-menu-heading">AI IN INDUSTRIES</strong></p>
+                        <p><a href="smart.html">Smart City</a></p>
+                      </div> -->
+                                    <div class="col-md-4">
+                                        <img src="/assets/img/about/service.gif" alt="flower" class="img-fluid">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-                   <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <li><a class="nav-link scrollto" href="#section-team">Team</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-            <!-- .navbar -->
+            </nav><!-- .navbar -->
 
         </div>
     </header>
@@ -99,6 +180,7 @@
     <section id="hero" class="d-flex align-items-center">
         <!-- Carousel wrapper -->
         <div class="container-fluid">
+
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -190,155 +272,107 @@
         </section>
         <!-- End Featured Services Section -->
 
-        <!-- ======= About Section ======= -->
-        <section id="about" class="about section-bg">
+
+        <!-- ======= Constructions Section ======= -->
+        <section id="constructions" class="constructions">
             <div class="container" data-aos="fade-up">
 
-                <div class="section-title">
-                    <h2>About</h2>
-                    <h3>Find Out More <span>About Us</span></h3>
-                    <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
-                        atque vitae autem.
-                    </p>
+                <div class="section-header">
+                    <h2>Constructions</h2>
+                    <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt
+                        quis dolorem dolore earum</p>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                        <img src="/assets/img/about/about.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center"
-                        data-aos="fade-up" data-aos-delay="100">
-                        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                        <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                        <ul>
-                            <li>
-                                <i class="bx bx-store-alt"></i>
-                                <div>
-                                    <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                                    <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="bx bx-images"></i>
-                                <div>
-                                    <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                                    <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna
-                                        pasata redi</p>
-                                </div>
-                            </li>
-                        </ul>
+                <div class="row gy-4">
 
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- End About Section -->
-
-        <!-- ======= About Section ======= -->
-        <section id="about1" class="about section-bg">
-
-            <div class="container" data-aos="fade-up">
-                <div class="row">
-                    <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center"
-                        data-aos="fade-up" data-aos-delay="100">
-                        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                        <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                        <ul>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-item">
                             <div class="row">
-                                <div class="col-6 left">
-                                    <li>
-                                        <i class="bx bx-store-alt"></i>
-                                        <div>
-                                            <h5>Ullamco laboris nisi ut</h5>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <i class="bx bx-images"></i>
-                                        <div>
-                                            <h5>Magnam soluta odio</h5>
-                                        </div>
-                                    </li>
+                                <div class="col-xl-5">
+                                    <div class="card-bg">
+                                        <img src="https://imageio.forbes.com/specials-images/imageserve/5ef4b263b002b30006d82ab0/Artificial-intelligence-concept-/960x0.jpg?format=jpg&width=960"
+                                            alt="">
+                                    </div>
                                 </div>
-                                <div class="col-6 left">
-                                    <li>
-                                        <i class="bx bx-store-alt"></i>
-                                        <div>
-                                            <h5>Ullamco laboris nisi</h5>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <i class="bx bx-images"></i>
-                                        <div>
-                                            <h5>Magnam soluta odio</h5>
-                                        </div>
-                                    </li>
+                                <div class="col-xl-7 d-flex align-items-center">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Eligendi omnis sunt veritatis.</h4>
+                                        <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem
+                                            placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia
+                                            temporibus illo magnam. Dolor eos et.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </ul>
-                        <div class="btn-learn-more">
-                            <a href="#" class="btn-item">Learn more</a>
                         </div>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                        <img src="/assets/img/about/img6-home5.png" class="img-fluid" alt="">
-                    </div>
+                    </div><!-- End Card Item -->
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-item">
+                            <div class="row">
+                                <div class="col-xl-5">
+                                    <div class="card-bg hover">
+                                        <img src="https://usdc.vn/wp-content/uploads/2021/05/b09c59ec-6e78-44ea-9529-d9513c2d008b.jpg"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 d-flex align-items-center">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Possimus ut sed velit assumenda</h4>
+                                        <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum
+                                            blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem
+                                            architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Card Item -->
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-item">
+                            <div class="row">
+                                <div class="col-xl-5">
+                                    <div class="card-bg">
+                                        <img src="https://businesspartnermagazine.com/wp-content/uploads/2022/03/5-Advantages-Of-IT-Outsourcing-In-The-Era-Of-Remote-Working-1.jpg"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 d-flex align-items-center">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Error beatae dolor inventore aut</h4>
+                                        <p>Dicta porro nobis. Velit cum in. Nesciunt dignissimos enim molestiae facilis
+                                            numquam quae quaerat ipsam omnis. Neque debitis ipsum at architecto officia
+                                            laboriosam odit. Ut sunt temporibus nulla culpa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Card Item -->
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-item">
+                            <div class="row">
+                                <div class="col-xl-5">
+                                    <div class="card-bg">
+                                        <img src="https://hci-aws-media.s3-accelerate.amazonaws.com/2020/07/connected-technology.jpg"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 d-flex align-items-center">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Expedita voluptas ut ut nesciunt</h4>
+                                        <p>Aut est quidem doloremque voluptatem magnam quis excepturi vero quia. Eum eos
+                                            doloremque architecto illo at beatae dolore. Fugiat suscipit et sint ratione
+                                            dolores. Aut aliquid ea dolores libero nobis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Card Item -->
+
                 </div>
+
             </div>
-        </section>
-        <!-- End About Section -->
-
-        <!-- ======= Skills Section ======= -->
-        <section id="skills" class="skills">
-            <div class="container">
-                <div class="content-car">
-                    <h3>Case Studies</h3>
-                    <p>Showcase of awesome works we have done for our clients</p>
-                </div>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <figure>
-                                <img src="assets/img/clients/a1.jpg" alt="Los Angeles">
-                                <img src="assets/img/clients/a2.jpg" alt="Los Angeles">
-                                <img src="assets/img/clients/a3.jpg" alt="Los Angeles">
-                            </figure>
-                        </div>
-                        <div class="item">
-                            <figure>
-                                <img src="assets/img/clients/a1.jpg" alt="Los Angeles">
-                                <img src="assets/img/clients/a2.jpg" alt="Los Angeles">
-                                <img src="assets/img/clients/a3.jpg" alt="Los Angeles">
-                            </figure>
-                        </div>
-                        <div class="item">
-                            <figure>
-                                <img src="assets/img/clients/a1.jpg" alt="Los Angeles">
-                                <img src="assets/img/clients/a2.jpg" alt="Los Angeles">
-                                <img src="assets/img/clients/a3.jpg" alt="Los Angeles">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- End Skills Section -->
+        </section><!-- End Constructions Section -->
 
         <!-- ======= Counts Section ======= -->
         <section id="counts" class="counts">
@@ -348,37 +382,37 @@
 
                     <div class="col-lg-3 col-md-6">
                         <div class="count-box">
-                            <i class="bi bi-emoji-smile"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                            <i class="bi bi-boxes"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1"
                                 class="purecounter"></span>
-                            <p>Happy Clients</p>
+                            <p>CLIENT</p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
                         <div class="count-box">
+                            <i class="bi bi-columns-gap"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1"
+                                class="purecounter"></span>
+                            <p>PROJECTS</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                        <div class="count-box">
                             <i class="bi bi-journal-richtext"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                            <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1"
                                 class="purecounter"></span>
-                            <p>Projects</p>
+                            <p>DATA PACKAGE</p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
                         <div class="count-box">
-                            <i class="bi bi-headset"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+                            <i class=" bi-geo-fill"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1"
                                 class="purecounter"></span>
-                            <p>Hours Of Support</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                        <div class="count-box">
-                            <i class="bi bi-people"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
-                                class="purecounter"></span>
-                            <p>Hard Workers</p>
+                            <p>EXPERT</p>
                         </div>
                     </div>
 
@@ -389,198 +423,448 @@
         <!-- End Counts Section -->
 
         <!-- ======= Clients Section ======= -->
-        <section id="skill" class="skill">
-            <div class="container" data-aos="fade-up">
-
-                <div class="row skills-content">
-
-                    <div class="col-lg-6">
-
-                        <img src="assets/img/clients/ab-1.png">
-
+        <section class="client-process" id="client-process">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Progress</h2>
+                    <p>Non hic nulla eum consequatur maxime ut vero memo vero totam officiis pariatur eos dolorum sed
+                        fug dolorem est possimus esse quae repudiandae. Dolorem id enim officiis sunt deserunt esse
+                        soluta consequatur quaerat</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+            
+                        <div class="">
+                            <div class="card-block p-3">
+                                <!--Title-->
+                                <h3 class="text-center font-up font-bold indigo-text py-2 mb-3"></h3>
+    
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/137857207" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                
                     </div>
-
-                    <div class="col-lg-6">
-
-                        <div class="progress" style="height: 20px;">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">75%</div>
-                        </div>
-                        <div class="progress" style="height: 20px;">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div>
-                        </div>
-                        <div class="progress" style="height: 20px;">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
-                        </div>
+                    <div class="col-md-6">
+                        <div class="skills">
+                            <!-- skill -->
+                            <div class="skill">
+                               <!-- title -->
+                               <div class="skill-title">
+                                  Web Development
+                               </div>
+                               <!-- bar -->
+                               <div class="skill-bar" data-bar="90"><span></span></div>
+                            </div>
+                            <!-- #skill -->
+                            <!-- skill -->
+                            <div class="skill">
+                               <!-- title -->
+                               <div class="skill-title">
+                                  Consulting
+                               </div>
+                               <!-- bar -->
+                               <div class="skill-bar" data-bar="70"><span></span></div>
+                            </div>
+                            <!-- #skill -->
+                            <!-- skill -->
+                            <div class="skill">
+                               <!-- title -->
+                               <div class="skill-title">
+                                  Branding & Identity
+                               </div>
+                               <!-- bar -->
+                               <div class="skill-bar" data-bar="60"><span></span></div>
+                            </div>
+                            <!-- #skill -->
+                            <!-- skill -->
+                            <div class="skill">
+                               <!-- title -->
+                               <div class="skill-title">
+                                  Graphic Design
+                               </div>
+                               <!-- bar -->
+                               <div class="skill-bar" data-bar="80"><span></span></div>
+                            </div>
+                            <!-- #skill -->
+                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- End Clients Section -->
 
-        <!-- ======= Pricing Section ======= -->
-        <section id="pricing" class="pricing">
+        <!-- ======= Alt Services Section ======= -->
+        <section id="alt-services" class="alt-services">
             <div class="container" data-aos="fade-up">
 
-                <div class="section-title">
-                    <h2>Pricing</h2>
-                    <h3>Check our <span>Pricing</span></h3>
-                    <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
-                        atque vitae autem.
-                    </p>
+                <div class="row justify-content-around gy-4">
+                    <div class="col-lg-6 img-bg" style="background-image: url(assets/img/about/81234-oacer-rocket.gif);"
+                        data-aos="zoom-in" data-aos-delay="100"></div>
+
+                    <div class="col-lg-5 d-flex flex-column justify-content-center">
+                        <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
+                        <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed
+                            minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi</p>
+
+                        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+                            <i class="bi bi-easel flex-shrink-0"></i>
+                            <div>
+                                <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
+                                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati cupiditate non provident</p>
+                            </div>
+                        </div><!-- End Icon Box -->
+
+                        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+                            <i class="bi bi-patch-check flex-shrink-0"></i>
+                            <div>
+                                <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                    voluptatum deleniti atque</p>
+                            </div>
+                        </div><!-- End Icon Box -->
+
+                        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+                            <i class="bi bi-brightness-high flex-shrink-0"></i>
+                            <div>
+                                <h4><a href="" class="stretched-link">Dine Pad</a></h4>
+                                <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut
+                                    deserunt minus aut eligendi omnis</p>
+                            </div>
+                        </div><!-- End Icon Box -->
+
+                        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+                            <i class="bi bi-brightness-high flex-shrink-0"></i>
+                            <div>
+                                <h4><a href="" class="stretched-link">Tride clov</a></h4>
+                                <p>Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit non
+                                    aspernatur odit amet. Et eligendi</p>
+                            </div>
+                        </div><!-- End Icon Box -->
+
+                    </div>
                 </div>
 
-                <div class="row">
+            </div>
+        </section><!-- End Alt Services Section -->
 
-                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="box">
-                            <h3>Free</h3>
-                            <h4><sup>$</sup>0<span> / month</span></h4>
-                            <ul>
-                                <li>Aida dere</li>
-                                <li>Nec feugiat nisl</li>
-                                <li>Nulla at volutpat dola</li>
-                                <li class="na">Pharetra massa</li>
-                                <li class="na">Massa ultricies mi</li>
-                            </ul>
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Purchase</a>
-                            </div>
-                        </div>
-                    </div>
+        <!-- ======= Features Section ======= -->
+        <section id="features" class="features section-bg">
+            <div class="container" data-aos="fade-up">
 
-                    <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-                        <div class="box featured">
-                            <h3>Business</h3>
-                            <h4><sup>$</sup>19<span> / month</span></h4>
-                            <ul>
-                                <li>Aida dere</li>
-                                <li>Nec feugiat nisl</li>
-                                <li>Nulla at volutpat dola</li>
-                                <li>Pharetra massa</li>
-                                <li class="na">Massa ultricies mi</li>
-                            </ul>
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Purchase</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="tabs">
 
-                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-                        <div class="box">
-                            <h3>Developer</h3>
-                            <h4><sup>$</sup>29<span> / month</span></h4>
-                            <ul>
-                                <li>Aida dere</li>
-                                <li>Nec feugiat nisl</li>
-                                <li>Nulla at volutpat dola</li>
-                                <li>Pharetra massa</li>
-                                <li>Massa ultricies mi</li>
-                            </ul>
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Purchase</a>
-                            </div>
-                        </div>
-                    </div>
+                    <input type="radio" id="tab1" name="tab-control" checked>
+                    <input type="radio" id="tab2" name="tab-control">
+                    <input type="radio" id="tab3" name="tab-control">
+                    <input type="radio" id="tab4" name="tab-control">
+                    <ul>
+                        <li title="Features"><label for="tab1" role="button"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M14,2A8,8 0 0,0 6,10A8,8 0 0,0 14,18A8,8 0 0,0 22,10H20C20,13.32 17.32,16 14,16A6,6 0 0,1 8,10A6,6 0 0,1 14,4C14.43,4 14.86,4.05 15.27,4.14L16.88,2.54C15.96,2.18 15,2 14,2M20.59,3.58L14,10.17L11.62,7.79L10.21,9.21L14,13L22,5M4.93,5.82C3.08,7.34 2,9.61 2,12A8,8 0 0,0 10,20C10.64,20 11.27,19.92 11.88,19.77C10.12,19.38 8.5,18.5 7.17,17.29C5.22,16.25 4,14.21 4,12C4,11.7 4.03,11.41 4.07,11.11C4.03,10.74 4,10.37 4,10C4,8.56 4.32,7.13 4.93,5.82Z" />
+                                </svg><br><span>Gói dữ liệu</span></label></li>
+                        <li title="Delivery Contents"><label for="tab2" role="button"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M2,10.96C1.5,10.68 1.35,10.07 1.63,9.59L3.13,7C3.24,6.8 3.41,6.66 3.6,6.58L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.66,6.72 20.82,6.88 20.91,7.08L22.36,9.6C22.64,10.08 22.47,10.69 22,10.96L21,11.54V16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V10.96C2.7,11.13 2.32,11.14 2,10.96M12,4.15V4.15L12,10.85V10.85L17.96,7.5L12,4.15M5,15.91L11,19.29V12.58L5,9.21V15.91M19,15.91V12.69L14,15.59C13.67,15.77 13.3,15.76 13,15.6V19.29L19,15.91M13.85,13.36L20.13,9.73L19.55,8.72L13.27,12.35L13.85,13.36Z" />
+                                </svg><br><span>Outsourcing</span></label></li>
+                        <li title="Shipping"><label for="tab3" role="button"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M3,4A2,2 0 0,0 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8H17V4M10,6L14,10L10,14V11H4V9H10M17,9.5H19.5L21.47,12H17M6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5M18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5Z" />
+                                </svg><br><span>Ứng dụng công nghệ AI</span></label></li>
+                        <li title="Returns"><label for="tab4" role="button"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                                </svg><br><span>Website</span></label></li>
+                    </ul>
 
-                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-                        <div class="box">
-                            <span class="advanced">Advanced</span>
-                            <h3>Ultimate</h3>
-                            <h4><sup>$</sup>49<span> / month</span></h4>
-                            <ul>
-                                <li>Aida dere</li>
-                                <li>Nec feugiat nisl</li>
-                                <li>Nulla at volutpat dola</li>
-                                <li>Pharetra massa</li>
-                                <li>Massa ultricies mi</li>
-                            </ul>
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Purchase</a>
-                            </div>
-                        </div>
+                    <div class="slider">
+                        <div class="indicator"></div>
                     </div>
+                    <div class="content">
+                        <section>
+                            <div class="tab-pane active show" id="tab-1">
+                                <div class="row">
+                                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                                        data-aos="fade-up" data-aos-delay="100">
+                                        <h3>CUNG CẤP GÓI DỮ LIỆU CHO MÔ HÌNH AI</h3>
+                                        <ul>
+                                            <p><i class="bi bi-check2-all"></i>Đội ngũ nhân sự đông đảo để thu thập, xử
+                                                lí dữ liệu, phục vụ cho việc đào tạo mô hình AI.</p>
+                                            <p><i class="bi bi-check2-all"></i>Các gói dữ liệu được xử lí từ phần data
+                                                thô đến data tinh qua xử lí.</p>
+                                            <p><i class="bi bi-check2-all"></i>Đáp ứng các nhu cầu của việc xây dựng mô
+                                                hình AI của bạn.</p>
+                                        </ul>
+                                        <a href="" class="py-sm-3 px-sm-5 rounded-pill mt-3">Read More</a>
+                                    </div>
+                                    <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up"
+                                        data-aos-delay="200">
+                                        <img src="https://vti-solutions-assets.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2021/10/08095533/Human-Intelligence-Can-Fix-AI-Shortcomings-1.jpg"
+                                            alt="" class="img-fluid hover">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="tab-pane active show" id="tab-1">
+                                <div class="row">
+                                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                                        data-aos="fade-up" data-aos-delay="100">
+                                        <h3>Outsourcing</h3>
+                                        <ul>
+                                            <p><i class="bi bi-check2-all"></i>Cung cấp các giải pháp và dịch vụ cho
+                                                nhiều công ty trong các lĩnh vực khác nhau.</p>
+                                            <p><i class="bi bi-check2-all"></i>Nâng cao đáng kể hoạt động kinh doanh cho
+                                                doanh nghiệp</p>
+                                            <p><i class="bi bi-check2-all"></i>Dựa trên đội tri thức và nguồn đội ngũ
+                                                nhân lực dồi dào</p>
+                                        </ul>
+                                        <a href="" class="py-sm-3 px-sm-5 rounded-pill mt-3">Read More</a>
+                                    </div>
+                                    <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up"
+                                        data-aos-delay="200">
+                                        <img src="http://www.ictworks.org/wp-content/uploads/2021/04/artificial_intelligence_phd-scholorship.png"
+                                            alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="tab-pane active show" id="tab-1">
+                                <div class="row">
+                                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                                        data-aos="fade-up" data-aos-delay="100">
+                                        <h3>Ứng dụng công nghệ AI</h3>
+                                        <ul>
+                                            <p><i class="bi bi-check2-all"></i>Gói dịch vụ toàn diện từ tư vấn, phát
+                                                triển, triển khai, triển khai, bảo trì và hỗ trợ.</p>
+                                            <p><i class="bi bi-check2-all"></i>Các doanh nghiệp có thể tiết kiệm ngân
+                                                sách cho các khoản đầu tư.</p>
+                                            <p><i class="bi bi-check2-all"></i>Nhờ vào kinh nghiệm dày dặn của chúng tôi
+                                                trong lĩnh vực cho phép thực hiện các dự án với chi phí thấp.</p>
+                                        </ul>
+                                        <a href="" class="py-sm-3 px-sm-5 rounded-pill mt-3">Read More</a>
+                                    </div>
+                                    <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up"
+                                        data-aos-delay="200">
+                                        <img src="https://fs.npstatic.com/userfiles/7611461/image/AI-artificial-intelligence-robot/AI-robot_04-w810h462.jpg"
+                                            alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="tab-pane active show" id="tab-1">
+                                <div class="row">
+                                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                                        data-aos="fade-up" data-aos-delay="100">
+                                        <h3>Xây dựng website</h3>
+                                        <ul>
+                                            <p><i class="bi bi-check2-all"></i>Gói dịch vụ toàn diện từ tư vấn, phát
+                                                triển, triển khai, triển khai, bảo trì và hỗ trợ.</p>
+                                            <p><i class="bi bi-check2-all"></i>Các doanh nghiệp có thể tiết kiệm ngân
+                                                sách cho các khoản đầu tư.</p>
+                                            <p><i class="bi bi-check2-all"></i>Nhờ vào kinh nghiệm dày dặn của chúng tôi
+                                                trong lĩnh vực cho phép thực hiện các dự án với chi phí thấp.</p>
+                                        </ul>
+                                        <a href="" class="py-sm-3 px-sm-5 rounded-pill mt-3">Read More</a>
+                                    </div>
+                                    <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up"
+                                        data-aos-delay="200">
+                                        <img src="https://themeforest.img.customer.envatousercontent.com/files/278281020/Previews/03_Home_Computer_vision.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=3e95a732142a1c2e08198271f432f6d6"
+                                            alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Features Section -->
+
+        <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="portfolio" data-aos="fade-up">
+
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Portfolio</h2>
+                    <p>Non hic nulla eum consequatur maxime ut vero memo vero totam officiis pariatur eos dolorum sed
+                        fug dolorem est possimus esse quae repudiandae. Dolorem id enim officiis sunt deserunt esse
+                        soluta consequatur quaerat</p>
+                </div>
+
+            </div>
+
+            <div class="container-fluid" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
+                    data-portfolio-sort="original-order">
+
+                    <ul class="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-app">App</li>
+                        <li data-filter=".filter-product">Product</li>
+                        <li data-filter=".filter-branding">Branding</li>
+                        <li data-filter=".filter-books">Books</li>
+                    </ul><!-- End Portfolio Filters -->
+
+                    <div class="row g-0 portfolio-container">
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
+                            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 1</h4>
+                                <a href="assets/img/portfolio/portfolio-1.jpg" title="App 1"
+                                    data-gallery="portfolio-gallery" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-product">
+                            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Product 1</h4>
+                                <a href="assets/img/portfolio/portfolio-2.jpg" title="Product 1"
+                                    data-gallery="portfolio-gallery" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-branding">
+                            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Branding 1</h4>
+                                <a href="assets/img/portfolio/portfolio-3.jpg" title="Branding 1"
+                                    data-gallery="portfolio-gallery" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-books">
+                            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Books 1</h4>
+                                <a href="assets/img/portfolio/portfolio-4.jpg" title="Branding 1"
+                                    data-gallery="portfolio-gallery" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
+                            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 2</h4>
+                                <a href="assets/img/portfolio/portfolio-5.jpg" title="App 2"
+                                    data-gallery="portfolio-gallery" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-product">
+                            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Product 2</h4>
+                                <a href="assets/img/portfolio/portfolio-6.jpg" title="Product 2"
+                                    data-gallery="portfolio-gallery" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-branding">
+                            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Branding 2</h4>
+                                <a href="assets/img/portfolio/portfolio-7.jpg" title="Branding 2"
+                                    data-gallery="portfolio-gallery" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-books">
+                            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Books 2</h4>
+                                <a href="assets/img/portfolio/portfolio-8.jpg" title="Branding 2"
+                                    data-gallery="portfolio-gallery" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
+                            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 3</h4>
+                                <a href="assets/img/portfolio/portfolio-9.jpg" title="App 3"
+                                    data-gallery="portfolio-gallery" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-product">
+                            <img src="assets/img/portfolio/portfolio-details-1.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Product 3</h4>
+                                <a href="assets/img/portfolio/portfolio-details-1.jpg" title="Product 3"
+                                    data-gallery="portfolio-gallery" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-branding">
+                            <img src="assets/img/portfolio/portfolio-details-2.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Branding 3</h4>
+                                <a href="assets/img/portfolio/portfolio-details-2.jpg" title="Branding 2"
+                                    data-gallery="portfolio-gallery" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-books">
+                            <img src="assets/img/portfolio/portfolio-details-3.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Books 3</h4>
+                                <a href="assets/img/portfolio/portfolio-details-3.jpg" title="Branding 3"
+                                    data-gallery="portfolio-gallery" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                    </div><!-- End Portfolio Container -->
 
                 </div>
 
             </div>
-        </section>
-        <!-- End Pricing Section -->
-        </section>
-
-        <!-- ======= Services Section ======= -->
-        <section id="services" class="services">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Services</h2>
-                    <h3>Check our <span>Services</span></h3>
-                    <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
-                        atque vitae autem.
-                    </p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                            <h4><a href="">Lorem Ipsum</a></h4>
-                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-                        data-aos-delay="200">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-file"></i></div>
-                            <h4><a href="">Sed ut perspiciatis</a></h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
-                        data-aos-delay="300">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-tachometer"></i></div>
-                            <h4><a href="">Magni Dolores</a></h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in"
-                        data-aos-delay="100">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-world"></i></div>
-                            <h4><a href="">Nemo Enim</a></h4>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in"
-                        data-aos-delay="200">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-slideshow"></i></div>
-                            <h4><a href="">Dele cardo</a></h4>
-                            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in"
-                        data-aos-delay="300">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-arch"></i></div>
-                            <h4><a href="">Divera don</a></h4>
-                            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- End Services Section -->
+        </section><!-- End Portfolio Section -->
+        <!-- End Our Projects Section -->
 
         <!-- ======= Testimonials Section ======= -->
         <section id="testimonials" class="testimonials">
@@ -595,10 +879,10 @@
                                 <h3>Saul Goodman</h3>
                                 <h4>Ceo &amp; Founder</h4>
                                 <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Proin iaculis purus consequat
-                                    sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam,
-                                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                                    risus at semper.
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Các giải pháp mà WIS Sofware
+                                    mang lại rất hiệu quả, đáp ứng được xác định chính xác theo yêu cầu của chúng tôi,
+                                    tốc độ kinh doanh của chúng tôi, chúng tôi tăng trường nhanh chóng sau khi áp dụng
+                                    công nghệ này, rất mong đợi nhiều lần hợp tác tiếp theo.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                             </div>
@@ -611,10 +895,10 @@
                                 <h3>Sara Wilsson</h3>
                                 <h4>Designer</h4>
                                 <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Export tempor illum tamen
-                                    malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum
-                                    velit fore eram velit sunt aliqua noster fugiat irure
-                                    amet legam anim culpa.
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Gói dữ liệu của WIS Sofware
+                                    thật sự đã giúp dự án AI của chúng tôi, chúng tôi thúc đẩy nhanh hơn bình thường, nó
+                                    rất đầy đủ, chính xác và đặc biệt là đa dạng, điều này khiến chúng tôi thích thú và
+                                    đề cao sự hợp tác này.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                             </div>
@@ -627,10 +911,10 @@
                                 <h3>Jena Karlis</h3>
                                 <h4>Store Owner</h4>
                                 <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Enim nisi quem export duis
-                                    labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore
-                                    quem eram duis noster aute amet eram fore quis sint
-                                    minim.
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>Nhờ có sự tư vấn của đội ngũ
+                                    chuyên gia AI kinh nghiệm của WIS mà dự án callbot của chúng tôi được hoàn thiện sớm
+                                    hơn dự tính, rất nhiều khó khăn và câu hỏi được chuyên gia giải đáp, tôi rất hài
+                                    lòng về dịch vụ của WIS Sofware, hi vọng sẽ hợp tác trong tương lai.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                             </div>
@@ -643,10 +927,11 @@
                                 <h3>Matt Brandon</h3>
                                 <h4>Freelancer</h4>
                                 <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Fugiat enim eram quae cillum
-                                    dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor
-                                    enim duis veniam ipsum anim magna sunt elit fore quem
-                                    dolore labore illum veniam.
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Khi chúng tôi loay hoay trong
+                                    mớ bòng bong của dự án về xử lí giọng nói, đã có lúc muốn bỏ cuộc, nhưng nhờ có đội
+                                    ngũ chuyên gia của WIS, họ thật sự trách nhiệm và tâm huyết, chúng tôi nhận ra sự
+                                    yếu kém về dữ liệu, thật tuyệt vời là điều đó được WIS Sofware hỗ trợ, và dự án của
+                                    chúng tôi đã về đích, rất hài lòng về dịch vụ của các bạn.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                             </div>
@@ -655,14 +940,14 @@
 
                         <div class="swiper-slide">
                             <div class="testimonial-item">
-                                <img src="/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                                 <h3>John Larson</h3>
                                 <h4>Entrepreneur</h4>
                                 <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Quis quorum aliqua sint quem
-                                    legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis
-                                    sunt culpa nulla illum cillum fugiat legam esse
-                                    veniam culpa fore nisi cillum quid.
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i> Một phần mềm quản lý kinh
+                                    doanh trực quan được thiết kế bởi WIS Sofware đã giúp ích cho công ty của tôi rất
+                                    nhiều trong việc vận hành, lợi nhuận công ty tăng vọt khi quản lý được số hoá, rất
+                                    mong đợi sự hợp tác tiếp theo với WIS Sofware
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                             </div>
@@ -680,7 +965,7 @@
         <!-- ======= Portfolio Section ======= -->
         <section id="portfolio" class="portfolio">
             <section id="gallery">
-                <div class="container">
+                <div class="container" data-aos="fade-up">
                     <div class="row jws-post-archive">
                         <div class="col-12 col-md-3 col-lg-3 text-last">
                             <h2>Latest Post Don’t miss it</h2>
@@ -690,257 +975,312 @@
                                 ntium tote rem aperam eaque ipsa quae ab illo inventore veritatis</p>
                         </div>
                         <div class="col-lg-2 btn-see">
-                            <a href="#" class="btn-see-more">See all post</a>
+                            <a href="#" class="btn-see-more"><span class="elementor-button-text">View more
+                                    articles</span><i aria-hidden="true"
+                                    class="fas fa-caret-right button-right"></i></a>
                         </div>
                     </div>
+                    <div class="row gy-5">
 
-                    <div class="row jws-post-archive">
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="">
-                                <img src="./assets/img/clients/cd.jpg" alt="" class="card-img-top">
-                                <div class="card-body">
-                                    <div class="btn-wrap">
-                                        <a href="#" class="btn-buy">Technology</a>
-                                    </div>
-                                    <h4 class="post-title"><a
-                                            href="http://ailab.jwsthemeswp.com/machine-learning-terms-every-manager-should-know/">Deep
-                                            Learning Chatbot - analysis and implementation</a></h4>
-                                    <p class="card-text">This Machine Learning Glossary aims to briefly introduce the
-                                        most important Machine Learning terms - both for the commercially and...</p>
-                                    <div class="pro-text d-flex justify-content-between">
-                                        <span class="pro-author">
-                                            <img src="http://ailab.jwsthemeswp.com/wp-content/uploads/2021/08/ava1-96x96.png"
-                                                alt="" width="50px" height="50px" loading="lazy">
-                                            <span class="color-layout-hover">Natasa Lina</span>
-                                            <span class="post-wish-list">
-                                                <a href="#" title="Love this"><i class="bi bi-heart"></i></a>
-                                                <span class="text-count">14</span>
-                                            </span>
-                                            <span class="post-wish-count">
-                                                <a href="#" title="Love this"><i class="bi bi-chat"></i></a>
-                                                <span class="text-count">8</span>
-                                            </span>
-                                        </span>
-                                    </div>
+                        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="post-item position-relative h-100">
+
+                                <div class="post-img position-relative overflow-hidden">
+                                    <img src="http://ailab.jwsthemeswp.com/wp-content/uploads/2020/01/futuristic-robot-artificial-intelligence-concept_31965-4242-1-370x250.jpg"
+                                        class="img-fluid" alt="">
+                                    <span class="post-date">December 12</span>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="">
-                                <img src="./assets/img/clients/cd1.jpg" alt="" class="card-img-top">
-                                <div class="card-body">
-                                    <div class="btn-wrap">
-                                        <a href="#" class="btn-buy">Business</a>
+
+                                <div class="post-content d-flex flex-column">
+
+                                    <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
+
+                                    <div class="meta d-flex align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
+                                        </div>
+                                        <span class="px-3 text-black-50">/</span>
+                                        <div class="d-flex align-items-center">
+                                            <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
+                                        </div>
                                     </div>
-                                    <h4 class="post-title"><a
-                                            href="http://ailab.jwsthemeswp.com/machine-learning-terms-every-manager-should-know/">How
-                                            companies are making money by recommend system</a></h4>
-                                    <p class="card-text">Not that long ago, people lived and functioned in tight
-                                        communities. Every vendor knew their customers personally and could make...
-                                    </p>
-                                    <div class="pro-text d-flex justify-content-between">
-                                        <span class="pro-author">
-                                            <img src="http://ailab.jwsthemeswp.com/wp-content/uploads/2021/08/ava1-96x96.png"
-                                                alt="" width="50px" height="50px" loading="lazy">
-                                            <span class="color-layout-hover">Natasa Lina</span>
-                                            <span class="post-wish-list">
-                                                <a href="#" title="Love this"><i class="bi bi-heart"></i></a>
-                                                <span class="text-count">14</span>
-                                            </span>
-                                            <span class="post-wish-count">
-                                                <a href="#" title="Love this"><i class="bi bi-chat"></i></a>
-                                                <span class="text-count">8</span>
-                                            </span>
-                                        </span>
-                                    </div>
+
+                                    <hr>
+
+                                    <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+                                            class="bi bi-arrow-right"></i></a>
+
                                 </div>
+
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="">
-                                <img src="./assets/img/clients/cd2.jpg" alt="" class="card-img-top">
-                                <div class="card-body">
-                                    <div class="btn-wrap">
-                                        <a href="#" class="btn-buy">Natural Language Processing</a>
-                                    </div>
-                                    <h4 class="post-title"><a
-                                            href="http://ailab.jwsthemeswp.com/machine-learning-terms-every-manager-should-know/">Machine
-                                            Learning Terms every manager should know</a></h4>
-                                    <p class="card-text">dolorum in pariatur. Incidunt repellendus praesentium quae!
-                                    </p>
-                                    <div class="pro-text d-flex justify-content-between">
-                                        <span class="pro-author">
-                                            <img src="http://ailab.jwsthemeswp.com/wp-content/uploads/2021/08/ava1-96x96.png"
-                                                alt="" width="50px" height="50px" loading="lazy">
-                                            <span class="color-layout-hover">Natasa Lina</span>
-                                            <span class="post-wish-list">
-                                                <a href="#" title="Love this"><i class="bi bi-heart"></i></a>
-                                                <span class="text-count">14</span>
-                                            </span>
-                                            <span class="post-wish-count">
-                                                <a href="#" title="Love this"><i class="bi bi-chat"></i></a>
-                                                <span class="text-count">8</span>
-                                            </span>
-                                        </span>
-                                    </div>
+                        </div><!-- End post item -->
+
+                        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="post-item position-relative h-100">
+
+                                <div class="post-img position-relative overflow-hidden">
+                                    <img src="http://ailab.jwsthemeswp.com/wp-content/uploads/2020/01/futuristic-robot-artificial-intelligence-concept_31965-6501-1-370x250.jpg"
+                                        class="img-fluid" alt="">
+                                    <span class="post-date">July 17</span>
                                 </div>
+
+                                <div class="post-content d-flex flex-column">
+
+                                    <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
+
+                                    <div class="meta d-flex align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <i class="bi bi-person"></i> <span class="ps-2">Mario Douglas</span>
+                                        </div>
+                                        <span class="px-3 text-black-50">/</span>
+                                        <div class="d-flex align-items-center">
+                                            <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+                                            class="bi bi-arrow-right"></i></a>
+
+                                </div>
+
                             </div>
-                        </div>
+                        </div><!-- End post item -->
+
+                        <div class="col-xl-4 col-md-6">
+                            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
+
+                                <div class="post-img position-relative overflow-hidden">
+                                    <img src="http://ailab.jwsthemeswp.com/wp-content/uploads/2020/01/1_Zg2-xYRoDZEPh_KhV2jYQg-370x250.jpeg"
+                                        class="img-fluid" alt="">
+                                    <span class="post-date">September 05</span>
+                                </div>
+
+                                <div class="post-content d-flex flex-column">
+
+                                    <h3 class="post-title">Quia assumenda est et veritati tirana ploder</h3>
+
+                                    <div class="meta d-flex align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <i class="bi bi-person"></i> <span class="ps-2">Lisa Hunter</span>
+                                        </div>
+                                        <span class="px-3 text-black-50">/</span>
+                                        <div class="d-flex align-items-center">
+                                            <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+                                            class="bi bi-arrow-right"></i></a>
+
+                                </div>
+
+                            </div>
+                        </div><!-- End post item -->
+
                     </div>
                 </div>
-
                 </div>
             </section>
         </section>
         <!-- End Portfolio Section -->
 
-        <!-- ======= Team Section ======= -->
-        <section id="team" class="team section-bg">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Team</h2>
-                    <h3>Our Hardworking <span>Team</span></h3>
-                    <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
-                        atque vitae autem.
-                    </p>
+        <!-- Our Team Section -->
+        <section class="section-team" id="section-team">
+            <div class="container">
+                <!-- Start Header Section -->
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="header-section">
+                            <h3 class="small-title">Team Members</h3>
+                            <h2 class="title">Let's meet with our team members</h2>
+                        </div>
+                    </div>
                 </div>
-
+                <!-- / End Header Section -->
                 <div class="row">
-
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                        <div class="member">
-                            <div class="member-img">
-                                <img src="/assets/img/team/nhh.jpg" class="img-fluid" alt="">
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="https://i.ibb.co/G2CBWvb/person1.jpg" alt="">
+                                <span class="icon">
+                                    <i class="fab fa-html5"></i>
+                                </span>
                             </div>
-                            <div class="member-info">
-                                <h4>Ngyen Huu Hoa</h4>
-                                <span>Trainer DevOps</span>
+                            <div class="person-info">
+                                <h3 class="full-name">John Doe</h3>
+                                <span class="speciality">Web Developer</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="member">
-                            <div class="member-img">
-                                <img src="/assets/img/team/pt.jpg" class="img-fluid" alt="">
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
+                    <!-- / End Single Person -->
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="https://i.ibb.co/nbpNr4r/person2.jpg" alt="">
+                                <span class="icon">
+                                    <i class="fab fa-wordpress-simple"></i>
+                                </span>
                             </div>
-                            <div class="member-info">
-                                <h4>Pham Tan</h4>
-                                <span>Expert AI</span>
+                            <div class="person-info">
+                                <h3 class="full-name">Robert Smith</h3>
+                                <span class="speciality">WordPress Developer</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-                        <div class="member">
-                            <div class="member-img">
-                                <img src="/assets/img/team/htd.jpg" class="img-fluid" alt="">
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
+                    <!-- / End Single Person -->
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="https://i.ibb.co/25zdRMr/person3.jpg" alt="">
+                                <span class="icon">
+                                    <i class="fab fa-angular"></i>
+                                </span>
                             </div>
-                            <div class="member-info">
-                                <h4>Nguyen Hong Duc</h4>
-                                <span>Expert AI</span>
+                            <div class="person-info">
+                                <h3 class="full-name">John Doe</h3>
+                                <span class="speciality">Angular Developer</span>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-                        <div class="member">
-                            <div class="member-img">
-                                <img src="/assets/img/team/dwd.jpeg" class="img-fluid" alt="">
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
+                    <!-- / End Single Person -->
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="https://i.ibb.co/w0ynr2Q/person4.jpg" alt="">
+                                <span class="icon">
+                                    <i class="fab fa-js"></i>
+                                </span>
                             </div>
-                            <div class="member-info">
-                                <h4>Ho Dinh Khanh</h4>
-                                <span>Expert</span>
+                            <div class="person-info">
+                                <h3 class="full-name">John Smith</h3>
+                                <span class="speciality">Javascript Developer</span>
                             </div>
                         </div>
                     </div>
-
+                    <!-- / End Single Person -->
                 </div>
-
             </div>
         </section>
-        <!-- End Team Section -->
-
-
+        <!-- End Our Team Section -->
 
         <!-- ======= Frequently Asked Questions Section ======= -->
         <section id="faq" class="faq section-bg">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>News & Blogs</h2>
+                    <h2>F.A.Q</h2>
                     <h3>Frequently Asked <span>Questions</span></h3>
                     <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
                         atque vitae autem.
                     </p>
                 </div>
 
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="/assets/img/blog/blog1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="http://wissfv.com/top-10-loi-ich-cua-chatbot-voi-doanh-nghiep-ma-ban-nen-bie/"
-                                    title="Permalink to Top 10 lợi ích của chatbot với doanh nghiệp">Top 10 lợi ích của
-                                    chatbot với doanh nghiệp</a>
-                            </h5>
-                            <p class="card-text">Chatbot hiểu đơn giản là một chương trình máy tính có khả năng tự động
-                                trò chuyện thông qua tin nhắn với người dùng, được xây dựng dựa trên....</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="/assets/img/about/tele.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="http://wissfv.com/telegram-dung-dau-700-trieu-nguoi-dung-ra-mat-cap-cao-cap/"
-                                    title="Permalink to Telegram đứng đầu 700 triệu người dùng, ra mắt cấp cao cấp">Telegram
-                                    đứng đầu 700 triệu người dùng, ra mắt cấp cao cấp</a>
-                            </h5>
-                            </h5>
-                            <p class="card-text">Telegram đã tích lũy được hơn 700 triệu người dùng hoạt động hàng tháng
-                                và đang tung ra một cấp cao cấp với các tính năng bổ sung khi...</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="/assets/img/about/ai6.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="http://wissfv.com/microsoft-va-meta-tham-gia-cung-google-trong-viec-su-dung-ai-de-giup-dieu-hanh-cac-trung-tam-du-lieu/"
-                                    title="Permalink to Microsoft và Meta tham gia cùng Google trong việc sử dụng AI để giúp điều hành các trung tâm dữ liệu">MICROSOFT
-                                    VÀ META THAM GIA CÙNG GOOGLE TRONG VIỆC SỬ DỤNG AI ĐỂ GIÚP ĐIỀU HÀNH CÁC TRUNG TÂM
-                                    DỮ LIỆU</a>
-                            </h5>
-                            <p class="card-text">Núi dữ liệu sẽ chỉ là vô dụng nếu không có người phân tích và phân loại
-                                chúng. Giới quan sát cho rằng khả năng gắn thẻ dữ liệu...</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <ul class="faq-list">
+
+                            <li>
+                                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a
+                                    erat nam at lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i
+                                        class="bi bi-chevron-up icon-close"></i></div>
+                                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                                        laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
+                                        rhoncus dolor purus non.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat
+                                    scelerisque varius morbi enim nunc faucibus a pellentesque? <i
+                                        class="bi bi-chevron-down icon-show"></i><i
+                                        class="bi bi-chevron-up icon-close"></i></div>
+                                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
+                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+                                        Mauris ultrices eros in
+                                        cursus turpis massa tincidunt dui.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet
+                                    consectetur adipiscing elit pellentesque habitant morbi? <i
+                                        class="bi bi-chevron-down icon-show"></i><i
+                                        class="bi bi-chevron-up icon-close"></i></div>
+                                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
+                                        Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl
+                                        suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
+                                        convallis tellus. Urna
+                                        molestie at elementum eu facilisis sed odio morbi quis
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor
+                                    orci dapibus. Aliquam eleifend mi in nulla? <i
+                                        class="bi bi-chevron-down icon-show"></i><i
+                                        class="bi bi-chevron-up icon-close"></i></div>
+                                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
+                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+                                        Mauris ultrices eros in
+                                        cursus turpis massa tincidunt dui.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam
+                                    pellentesque nec nam aliquam sem et tortor consequat? <i
+                                        class="bi bi-chevron-down icon-show"></i><i
+                                        class="bi bi-chevron-up icon-close"></i></div>
+                                <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                        Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim
+                                        suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.
+                                        Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit
+                                        turpis cursus in
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae
+                                    purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i
+                                        class="bi bi-chevron-down icon-show"></i><i
+                                        class="bi bi-chevron-up icon-close"></i></div>
+                                <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                                    <p>
+                                        Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies
+                                        leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet.
+                                        Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu
+                                        scelerisque. Pellentesque
+                                        diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh
+                                        tellus molestie nunc non blandit massa enim nec.
+                                    </p>
+                                </div>
+                            </li>
+
+                        </ul>
                     </div>
                 </div>
 
@@ -953,7 +1293,7 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Đối Tác</h2>
+                    <h2>Contact</h2>
                     <h3><span>Contact Us</span></h3>
                     <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
                         atque vitae autem.
@@ -961,55 +1301,72 @@
                 </div>
 
                 <div class="row" data-aos="fade-up" data-aos-delay="100">
-                    <div class="col-lg-2">
+                    <div class="col-lg-6">
                         <div class="info-box mb-4">
-                            <img class="in-box top" src="/assets/img/clients/chi-muc-1.jpg" alt="in-box cap">
-                            <h3></h3>
-                            <p></p>
+                            <i class="bx bx-map"></i>
+                            <h3>Our Address</h3>
+                            <p>18 Tam Trinh, Minh Khai, Quận Hai Bà Trưng, TP.Hà Nội</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-6">
+                    <div class="col-lg-3 col-md-6">
                         <div class="info-box  mb-4">
-                            <img class="in-box top" src="/assets/img/clients/client-1.png" alt="in-box cap">
-                            <h3></h3>
-                            <p></p>
+                            <i class="bx bx-envelope"></i>
+                            <h3>Email Us</h3>
+                            <p>contact@example.com</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-6">
+                    <div class="col-lg-3 col-md-6">
                         <div class="info-box  mb-4">
-                            <img class="in-box top" src="/assets/img/clients/vt.jpg" alt="in-box cap">
-                            <h3></h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="info-box mb-4">
-                            <img class="in-box top" src="/assets/img/clients/client-2.png" alt="in-box cap">
-                            <h3></h3>
-                            <p></p>
+                            <i class="bx bx-phone-call"></i>
+                            <h3>Call Us</h3>
+                            <p>+1 5589 55488 55</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-6">
-                        <div class="info-box  mb-4">
-                            <img class="in-box top" src="/assets/img/clients/client-7.jpg"
-                                alt="in-box cap">
-                            <h3></h3>
-                            <p></p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-2 col-md-6">
-                        <div class="info-box  mb-4">
-                            <img class="in-box top" src="/assets/img/clients/pvs.jpg" alt="in-box cap" height="140px"
-                                width="140px">
-                            <h3></h3>
-                            <p></p>
-                        </div>
-                    </div>
                 </div>
+
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="col-lg-6 map-address">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.244780960091!2d105.86116461440655!3d20.982822794721947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac3d5908f79d%3A0x9fd40d6905ec525d!2zMTggxJAuIFRhbSBUcmluaCwgSG_DoG5nIFbEg24gVGjhu6UsIEhhaSBCw6AgVHLGsG5nLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1659435589082!5m2!1svi!2s"
+                            width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                            <div class="row">
+                                <div class="col form-group">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="Your Name" required>
+                                </div>
+                                <div class="col form-group">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="subject" id="subject"
+                                    placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                    required></textarea>
+                            </div>
+                            <div class="my-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center"><button type="submit">Send Message</button></div>
+                        </form>
+                    </div>
+
+                </div>
+
             </div>
         </section>
         <!-- End Contact Section -->
@@ -1020,82 +1377,84 @@
     <footer id="footer">
 
         <div class="footer-newsletter">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-6">
-               <h></h>
-               <p></p>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-    
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-    
-              <div class="col-lg-2 col-md-6 footer-contact">
-                <h3>BizLand<span>.</span></h3>
-                <p>
-                  A108 Adam Street <br>
-                  New York, NY 535022<br>
-                  United States <br><br>
-                  <strong>Phone:</strong> +1 5589 55488 55<br>
-                  <strong>Email:</strong> info@example.com<br>
-                </p>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 footer-links">
-                <h4>Useful Links</h4>
-                <ul>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                </ul>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 footer-links">
-                <h4>Our Services</h4>
-                <ul>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                </ul>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 footer-links">
-                <h4>Our Social Networks</h4>
-                <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-                <div class="social-links mt-3">
-                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                  <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                  <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                  <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="container py-4">
-                <div class="copyright">
-                  &copy; Copyright <strong><span>BizLand</span></strong>. All Rights Reserved
-                </div>
-                <div class="credits">
-                  <!-- All the links in the footer should remain intact. -->
-                  <!-- You can delete the links only if you purchased the pro version. -->
-                  <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                  <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
-                  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h></h>
+                        <p></p>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-2 col-md-6 footer-contact">
+                        <h3>Wis Sofware<span>.</span></h3>
+                        <p>
+                            18 Tam Trinh <br>
+                            Minh Khai<br>
+                            Quận Hai Bà Trưng <br><br>
+                            <strong>Phone:</strong> +1 5589 55488 55<br>
+                            <strong>Email:</strong> info@example.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Social Networks</h4>
+                        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="container py-4">
+                        <div class="copyright">
+                            &copy; Copyright <strong><span>Wis Sofware</span></strong>. All Rights Reserved
+                        </div>
+                        <div class="credits">
+                            <!-- All the links in the footer should remain intact. -->
+                            <!-- You can delete the links only if you purchased the pro version. -->
+                            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
+                            Designed by <a href="https://bootstrapmade.com/">Wis Sofware</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
     <!-- End Footer -->
 
     <div id="preloader"></div>
@@ -1121,12 +1480,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <!-- MDB -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>
 
 </body>
 
