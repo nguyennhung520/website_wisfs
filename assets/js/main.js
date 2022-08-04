@@ -10,7 +10,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -123,7 +123,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -132,7 +132,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -142,7 +142,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -193,7 +193,7 @@
     new Waypoint({
       element: skilsContent,
       offset: '80%',
-      handler: function(direction) {
+      handler: function (direction) {
         let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
           el.style.width = el.getAttribute('aria-valuenow') + '%'
@@ -232,9 +232,9 @@
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#portfolio-flters li', function (e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        portfolioFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
@@ -242,7 +242,7 @@
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
+        portfolioIsotope.on('arrangeComplete', function () {
           AOS.refresh()
         });
       }, true);
@@ -295,10 +295,10 @@ $(".hover").mouseleave(
   }
 );
 
-$(function() {
-  $('a[href*=#]').on('click', function(e) {
+$(function () {
+  $('a[href*=#]').on('click', function (e) {
     e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
   });
 });
 
@@ -306,11 +306,79 @@ $(function() {
 jQuery(function ($) {
   // Google Maps setup
   var googlemap = new google.maps.Map(
-      document.getElementById('googlemap'),
-      {
-          center: new google.maps.LatLng(44.5403, -78.5463),
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-      }
+    document.getElementById('googlemap'),
+    {
+      center: new google.maps.LatLng(44.5403, -78.5463),
+      zoom: 8,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
   );
 });
+
+function isTouchDevice() {
+  return (('ontouchstart' in window) ||
+    (navigator.maxTouchPoints > 0) ||
+    (navigator.msMaxTouchPoints > 0));
+}
+
+$('.card > .image').on('hover mouseover', function () {
+  if (isTouchDevice() == false) {
+    var src = $(this).children('.image-hover').attr('data-src');
+    $(this).children('.image-hover').prop('src', src);
+  }
+});
+
+document.querySelectorAll(".projcard-description").forEach(function (box) {
+  $clamp(box, { clamp: 6 });
+});
+
+let portfolionIsotope = document.querySelector('.portfolio-isotope');
+
+if (portfolionIsotope) {
+
+  let portfolioFilter = portfolionIsotope.getAttribute('data-portfolio-filter') ? portfolionIsotope.getAttribute('data-portfolio-filter') : '*';
+  let portfolioLayout = portfolionIsotope.getAttribute('data-portfolio-layout') ? portfolionIsotope.getAttribute('data-portfolio-layout') : 'masonry';
+  let portfolioSort = portfolionIsotope.getAttribute('data-portfolio-sort') ? portfolionIsotope.getAttribute('data-portfolio-sort') : 'original-order';
+
+  window.addEventListener('load', () => {
+    let portfolioIsotope = new Isotope(document.querySelector('.portfolio-container'), {
+      itemSelector: '.portfolio-item',
+      layoutMode: portfolioLayout,
+      filter: portfolioFilter,
+      sortBy: portfolioSort
+    });
+
+    let menuFilters = document.querySelectorAll('.portfolio-isotope .portfolio-flters li');
+    menuFilters.forEach(function (el) {
+      el.addEventListener('click', function () {
+        document.querySelector('.portfolio-isotope .portfolio-flters .filter-active').classList.remove('filter-active');
+        this.classList.add('filter-active');
+        portfolioIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+        if (typeof aos_init === 'function') {
+          aos_init();
+        }
+      }, false);
+    });
+
+  });
+
+}
+
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+
+$(".skills").addClass("active")
+$(".skills .skill .skill-bar span").each(function() {
+   $(this).animate({
+      "width": $(this).parent().attr("data-bar") + "%"
+   }, 1000);
+   $(this).append('<b>' + $(this).parent().attr("data-bar") + '%</b>');
+});
+setTimeout(function() {
+   $(".skills .skill .skill-bar span b").animate({"opacity":"1"},1000);
+}, 2000);
